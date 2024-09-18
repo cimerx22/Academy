@@ -11,13 +11,9 @@
   --blue-dark: #0a1720;
   --green-dark: #74cf21;
   --green-light: #9ef176;
-
 }
 
-
-
 * {
-
   /* Resetar os propriedades dos elementos*/
 
   box-sizing: border-box;
@@ -25,9 +21,51 @@
   margin: 0;
 }
 
-html{
+html {
+  /* A cada 1 Rem equivale a 10px  */
 
-    /* A cada 1 Rem equivale a 10px  */
+  font-size: 62.5%;
+}
 
-    font-size: 62.5%;
+header {
+  width: 100vw;
+  background-color: var(--green-dark);
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .top-bar {
+  max-width: 1000px;
+  width: 1000px;
+  margin: auto;
+  background-color: rgb(20, 205, 238);
+  display: flex;
+  justify-content: space-between;
+}
+
+header .top-bar .contact {
+  background-color: #7cff02;
+  display: flex;
+}
+header .top-bar .social-media {
+  background-color: aliceblue;
+  display: flex;
+}
+
+header .top-bar .contact .icon-contact{
+  display: flex;
+}
+
+header .top-bar .contact .icon-phone{
+  display: flex;
+}
+
+header i{
+  font-size: 2.5rem;
+}
+
+header h5{
+  font-size: 1.8rem;
 }
