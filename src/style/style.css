@@ -69,3 +69,28 @@ header i{
 header h5{
   font-size: 1.8rem;
 }
+
+#menu{
+  list-style: none;
+  border-radius: 40px;
+  width: 700px;
+  height: 67px;
+  padding: 18px;
+  margin: auto;
+  background-color:#0f2a39;
+  margin-top: 30px;
+}
+
+#menu li{
+  display: inline;
+}
+
+#menu li a{
+  color: #E2E2E2;
+  text-decoration: none;
+  display: inline;
+  padding: 10px;
+  font-family: ("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap");
+  font-size: 16px;
+  margin-left: 20px;
+}
