@@ -5,67 +5,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap");
 
 :root {
-  /* variáveis de cores */
+	/* variáveis de cores */
 
-  --blue-light: #0f2a39;
-  --blue-dark: #0a1720;
-  --green-dark: #74cf21;
-  --green-light: #9ef176;
+	--blue-light: #0f2a39;
+	--blue-dark: #0a1720;
+	--green-dark: #74cf21;
+	--green-light: #9ef176;
 }
 
 * {
-  /* Resetar os propriedades dos elementos*/
+	/* Resetar os propriedades dos elementos*/
 
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html {
-  /* A cada 1 Rem equivale a 10px  */
+	/* A cada 1 Rem equivale a 10px  */
 
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 header {
-  width: 100vw;
-  background-color: var(--green-dark);
-  height: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100vw;
+	background-color: var(--green-dark);
+	height: 47px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 header .top-bar {
-  max-width: 1000px;
-  width: 1000px;
-  margin: auto;
-  background-color: rgb(20, 205, 238);
-  display: flex;
-  justify-content: space-between;
+	max-width: 1000px;
+	width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 header .top-bar .contact {
-  background-color: #7cff02;
-  display: flex;
+	display: flex;
+	gap: 20px;
 }
+
+header .top-bar .contact .icon-contact {
+	display: flex;
+	height: auto;
+	gap: 9px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .top-bar .contact h5 {
+	font-family: "poppins";
+	font-size: 1.8rem;
+	margin: 0;
+	line-height: normal;
+}
+
+header .top-bar .contact .icon-phone {
+	display: flex;
+  height: auto;
+	gap: 9px;
+  justify-content: space-between;
+	align-items: center;
+}
+
+header i:nth-child(1) {
+	font-size: 2.5rem;
+}
+
+header i:nth-child(2) {
+	font-size: 2.7rem;
+}
+
+header h5 {
+	font-size: 1.8rem;
+}
+
 header .top-bar .social-media {
-  background-color: aliceblue;
-  display: flex;
+	display: flex;
 }
 
-header .top-bar .contact .icon-contact{
-  display: flex;
+header .top-bar .social-media .container-sm {
+	display: flex;
+	gap: 10px;
+  justify-content: space-between;
 }
 
-header .top-bar .contact .icon-phone{
-  display: flex;
+/* section > hero */
+
+.hero {
+	width: 100%;
+  height: auto;
+	background-color: var(--blue-dark);
 }
 
-header i{
-  font-size: 2.5rem;
+main .hero .content-hero {
+	max-width: 1000px;
+	display: flex;
 }
 
-header h5{
-  font-size: 1.8rem;
+/* media query */
+
+
+@media (max-width: 480px) {
+	/* Estilos para smartphones em modo retrato */
+
+  header .top-bar {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+	header .top-bar .contact h5 {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	/* Estilos para smartphones em modo paisagem */
+
+  header .top-bar {
+    max-width: 90%;
+  }
+
+  header .top-bar .contact h5 {
+		font-size: 1.4rem;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	/* Estilos para tablets */
+
+  header .top-bar {
+    max-width: 90%;
+  }
+
+  header .top-bar .contact h5 {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+	/* Estilos para pequenas telas de laptop */
+}
+
+@media (min-width: 1201px) {
+	/* Estilos para desktops grandes */
 }
