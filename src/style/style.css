@@ -27,6 +27,12 @@ html {
 	font-size: 62.5%;
 }
 
+body{
+  background-color: var(--blue-dark);
+}
+
+/* header */
+
 header {
 	width: 100vw;
 	background-color: var(--green-dark);
@@ -104,15 +110,82 @@ main {
 	width: 100%;
   height: auto;
 	background-color: var(--blue-dark);
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
 }
 
-main .hero .content-hero {
+.content-hero {
 	max-width: 1000px;
+  width: 1000px;
+  height: auto;
 	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  
 }
+
+.text-content-hero{
+  display: flex;
+  background-color: #0a1720;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-hero{
+  width: 150px;
+  /* align-self: flex-end; */
+  /* margin-bottom: 20px; */
+}
+
+.text-hero h1{
+  font-size: 10rem;
+  color: var(--blue-dark);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-shadow: 2px 2px 0 #517f44, -2px 2px 0 #517f44, 2px -2px 0 #517f44, -2px -2px 0 #517f44;
+}
+
+.text-content{
+  align-self: flex-start;
+}
+
+.text-content h1{
+  align-self: flex-start;
+  font-size: 4rem;
+}
+
+.imgs-hero{
+  width: 370px;
+  height: 530px;
+}
+
 
 header h5{
   font-size: 1.8rem;
+}
+
+/* section > hero > menu */
+
+.hero-menu{
+  height: 80px;
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  background-color: var(--blue-light);
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 40px;
+}
+
+.menu-logo{
+  padding-left: 40px;
+}
+
+.menu-logo img {
+  width: 70px;
+  height: 70px;
 }
 
 #menu{
@@ -131,35 +204,33 @@ header h5{
   font-size: 16px;
 }
 
-.hero-menu{
-  height: 80px;
-  max-width: 900px;
-  width: 900px;
-  display: flex;
-  background-color: var(--blue-light);
-  margin: auto;
-  justify-content: space-between;
-  border-radius: 40px;
-  top: 30px;
-  position: absolute;
-  left: 0;
-  right: 0;
+.button-menu{
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.menu-logo{
-  padding-left: 40px;
-}
-
-.menu-logo img {
+.line{
   width: 70px;
-  height: 70px;
+  height: 10px;
+  background-color: var(--green-dark);
+  border-radius: 15px;
 }
 
-main .hero .content-hero .text-hero h1{
-  font-size: 11.0rem;
-  color: transparent;
-  text-shadow: 0 0 0 var(--green-dark);
+.line:nth-child(1){
+  width: 35px;
+  align-self: flex-start;
 }
+
+.line:nth-child(3){
+  width: 35px;
+  align-self: flex-end;
+}
+
+
 
 /* media query */
 
@@ -168,7 +239,7 @@ main .hero .content-hero .text-hero h1{
 	/* Estilos para smartphones em modo retrato */
 
   header .top-bar {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -183,12 +254,27 @@ main .hero .content-hero .text-hero h1{
 	/* Estilos para smartphones em modo paisagem */
 
   header .top-bar {
-    max-width: 90%;
+    max-width: 85%;
   }
 
   header .top-bar .contact h5 {
 		font-size: 1.4rem;
 	}
+
+  .hero-menu{
+    width: 100%;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  .button-menu{
+    display: flex;
+    margin-right: 40px;
+  }
+
+
 
 }
 
@@ -197,12 +283,20 @@ main .hero .content-hero .text-hero h1{
 
   header .top-bar {
     max-width: 90%;
+    width: 90%;
   }
 
   header .top-bar .contact h5 {
 		font-size: 1.4rem;
 	}
+
+  .hero-menu{
+    max-width: 99%;
+    width: 99%;
+  }
+
 }
+
 
 @media (min-width: 1025px) and (max-width: 1200px) {
 	/* Estilos para pequenas telas de laptop */
