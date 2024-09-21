@@ -103,6 +103,7 @@ header .top-bar .social-media .container-sm {
 /* section > hero */
 
 main {
+  margin-top: 30px;
   position: relative;
 }
 
@@ -110,10 +111,10 @@ main {
 	width: 100%;
   height: auto;
 	background-color: var(--blue-dark);
-  background-color: aqua;
   display: flex;
   justify-content: center;
 }
+
 
 .content-hero {
 	max-width: 1000px;
@@ -122,8 +123,22 @@ main {
 	display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite;
+  position: relative;
   
+}
+
+.content-hero > img{
+  position: absolute;
+}
+
+.onion-top{
+  bottom: 0;
+  left: -30px;
+}
+
+.onion-bottom{
+  top: 0;
+  right: -30px;
 }
 
 .text-content-hero{
@@ -131,10 +146,12 @@ main {
   background-color: #0a1720;
   justify-content: center;
   align-items: center;
+  width: 500px;
 }
 
 .text-hero{
   width: 150px;
+  
   /* align-self: flex-end; */
   /* margin-bottom: 20px; */
 }
@@ -154,12 +171,102 @@ main {
 .text-content h1{
   align-self: flex-start;
   font-size: 4rem;
+  color: white;
+  font-family: "poppins";
+  line-height: 5rem;
+  font-weight: medium;
 }
+
+.text-content h1 span{
+  color: var(--green-light);
+}
+
+.text-content > p{
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.icon-text{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.file-check{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-check i{
+  color: white;
+  font-size: 3.5rem;
+  
+}
+
+.file-check p{
+  width: 120px;
+  text-align:left;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.square-energy{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-energy i{
+  font-size: 3.5rem;
+  color: white;
+  display: flex; 
+}
+
+.square-energy p{
+  width: 100px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.button-planos{
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 130px;
+  height: 50px;
+  position: relative;
+}
+
+.button-planos button{
+  background-color: var(--green-dark);
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  padding-right: 15px;
+
+}
+
+.button-planos i{
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 15px;
+  right: 4px;
+}
+
 
 .imgs-hero{
   width: 370px;
   height: 530px;
 }
+
 
 
 header h5{
@@ -216,7 +323,7 @@ header h5{
 .line{
   width: 70px;
   height: 10px;
-  background-color: var(--green-dark);
+  background-color: white;
   border-radius: 15px;
 }
 
