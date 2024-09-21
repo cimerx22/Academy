@@ -34,7 +34,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} 
 
 header .top-bar {
 	max-width: 1000px;
@@ -96,6 +96,10 @@ header .top-bar .social-media .container-sm {
 
 /* section > hero */
 
+main {
+  position: relative;
+}
+
 .hero {
 	width: 100%;
   height: auto;
@@ -105,6 +109,50 @@ header .top-bar .social-media .container-sm {
 main .hero .content-hero {
 	max-width: 1000px;
 	display: flex;
+}
+
+header h5{
+  font-size: 1.8rem;
+}
+
+#menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding-right: 40px;
+}
+
+#menu li a{
+  color: #E2E2E2;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.hero-menu{
+  height: 80px;
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  background-color: var(--blue-light);
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 40px;
+  top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.menu-logo{
+  padding-left: 40px;
+}
+
+.menu-logo img {
+  width: 70px;
+  height: 70px;
 }
 
 main .hero .content-hero .text-hero h1{
