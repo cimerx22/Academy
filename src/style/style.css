@@ -34,7 +34,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} 
 
 header .top-bar {
 	max-width: 1000px;
@@ -96,6 +96,10 @@ header .top-bar .social-media .container-sm {
 
 /* section > hero */
 
+main {
+  position: relative;
+}
+
 .hero {
 	width: 100%;
   height: auto;
@@ -113,27 +117,42 @@ header h5{
 
 #menu{
   list-style: none;
-  border-radius: 40px;
-  width: 700px;
-  height: 67px;
-  padding: 18px;
-  margin: auto;
-  background-color:#0f2a39;
-  margin-top: 30px;
-}
-
-#menu li{
-  display: inline;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding-right: 40px;
 }
 
 #menu li a{
   color: #E2E2E2;
   text-decoration: none;
-  display: inline;
-  padding: 10px;
-  font-family: ("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap");
+  font-family: "Poppins";
   font-size: 16px;
-  margin-left: 20px;
+}
+
+.hero-menu{
+  height: 80px;
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  background-color: var(--blue-light);
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 40px;
+  top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.menu-logo{
+  padding-left: 40px;
+}
+
+.menu-logo img {
+  width: 70px;
+  height: 70px;
 }
 
 /* media query */
