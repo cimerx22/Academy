@@ -107,6 +107,12 @@ main .hero .content-hero {
 	display: flex;
 }
 
+main .hero .content-hero .text-hero h1{
+  font-size: 11.0rem;
+  color: transparent;
+  text-shadow: 0 0 0 var(--green-dark);
+}
+
 /* media query */
 
 
