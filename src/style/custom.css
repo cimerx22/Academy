@@ -1,4 +1,28 @@
-:root, [data-bs-theme=dark] {
-    color-scheme: dark;
-    
+.carousel-control-prev{
+    & i{
+        transform: rotate(180deg);
+    }
+}
+
+.carousel-control-prev{
+    left: -100px;
+}
+
+.carousel-control-next{
+    right: -100px;
+
+    & span{
+        background-color: aquamarine;
+        padding: 20px;
+    }
+}
+
+.carousel{
+    & i{
+        color: greenyellow;
+        font-size: 20px;
+        padding: 20px;
+        border: 3px solid greenyellow;
+        border-radius: 50%;
+    }
 }
