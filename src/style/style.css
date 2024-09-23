@@ -297,6 +297,7 @@ main {
 	align-items: center;
 	gap: 25px;
 	padding-right: 40px;
+	margin: 0;
 }
 
 #menu li a {
