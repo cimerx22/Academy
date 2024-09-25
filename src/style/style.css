@@ -414,6 +414,29 @@ main {
 }
 
 
+
+
+
+
+
+
+.cta-content{
+	background-image: url(../imgs/CTA/background\ cta.jpg);
+	max-width: 1000px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query */
 
 /* @media (max-width: 550px) {
