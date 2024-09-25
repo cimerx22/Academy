@@ -18,7 +18,7 @@
 
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0;
+	margin: 0; 
 }
 
 html {
@@ -34,7 +34,7 @@ body {
 /* header */
 
 header {
-	width: 100vw;
+	width: 100%;
 	background-color: var(--green-dark);
 	height: 47px;
 	display: flex;
@@ -104,7 +104,9 @@ header {
 
 main {
 	margin-top: 30px;
+	height: auto;
 	position: relative;
+	width: 100%;
 }
 
 .hero {
@@ -150,9 +152,6 @@ main {
 
 .text-hero {
 	width: 150px;
-
-	/* align-self: flex-end; */
-	/* margin-bottom: 20px; */
 }
 
 .text-hero h1 {
@@ -262,11 +261,28 @@ main {
 .imgs-hero {
 	width: 370px;
 	height: 530px;
+	margin: auto;
+	top:40px; 
+	position: relative;
+
+
+	& img:nth-child(1) {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+
+	& img:nth-child(2) {
+		width: 100%;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+
+	}
+
 }
 
-.imgs-hero img {
-	width: 100%;
-}
+
 
 /* section > hero > menu */
 
@@ -332,17 +348,16 @@ main {
 	align-self: flex-end;
 }
 
-
-
-
-
-
-
-
-
 .carousel{
 	max-width: 1000px;
 	margin: 0 auto 50px auto;
+	position: relative;
+
+	& #starUnion{
+		position: absolute;
+		top: px;
+		right: 0;
+	}
 
 	& .carousel-title{
 		width: 500px;
@@ -399,52 +414,9 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media query */
 
-@media (max-width: 550px) {
-	/* Estilos para smartphones em modo retrato */
+/* @media (max-width: 550px) {
 
 	header .top-bar {
 		max-width: 80%;
@@ -495,10 +467,9 @@ main {
 		flex-direction: column;
 		gap: 20px;
 	}
-}
+} */
 
-@media (max-width: 767px) {
-	/* Estilos para smartphones em modo paisagem */
+/* @media (max-width: 767px) {
 
 	header .top-bar {
 		max-width: 85%;
@@ -533,10 +504,9 @@ main {
 		width: 200px;
 		height: auto;
 	}
-}
+} */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-	/* Estilos para tablets */
+/* @media (min-width: 768px) and (max-width: 1024px) {
 
 	header .top-bar {
 		max-width: 90%;
@@ -560,12 +530,12 @@ main {
 	.content-hero {
 		width: 100%;
 	}
-}
+} */
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-	/* Estilos para pequenas telas de laptop */
-}
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+	Estilos para pequenas telas de laptop 
+} */
 
-@media (min-width: 1201px) {
-	/* Estilos para desktops grandes */
-}
+/* @media (min-width: 1201px) {
+	 Estilos para desktops grandes
+} */
