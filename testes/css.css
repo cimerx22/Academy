@@ -109,13 +109,23 @@ body {
 		& .img-plano {
             width: 340px;
             height: 523px;
+			position: relative;
 
             & img{
                 width: 100%;
                 height: 100%;
+				position: absolute;
                 object-fit: contain;
-                transition: all 0.5     s;
+				transform: translateX(-100%);
+				opacity: 0;
+				transition: all 1s ease-in;
+				z-index: -1;
             }
+
+			& .img-active{
+				transform: translateX(0);
+				opacity: 1;
+			}
         }
 
 		& .items-conteudo {
@@ -125,6 +135,7 @@ body {
 				flex-direction: column;
 				justify-content: center;
 				gap: 50px;
+				
 
 				& li {
 					font-size: 2rem;
@@ -142,9 +153,16 @@ body {
 					position: relative;
 					z-index: 2;
 
-                    & span:nth-child(2){
+                    & .valores{
+						display: inline-block;
                         font-size: 3rem;
+						transform: translateX(100%);
+						transition: all 1s ease;
                     }
+
+					& .span-active{
+						transform: translateX(0);
+					}
 				}
 
 				& li::after {
@@ -183,4 +201,40 @@ body {
 			}
 		}
 	}
+}
+
+
+@keyframes fades {
+	0%{
+		top: -100%;
+	}
+
+
+	50%{
+		/* top: 0; */
+	}
+
+	100%{
+		top: 0;
+	}
+}
+
+@keyframes fade-1 {
+	0%{
+		left: 0;
+	}
+
+	100%{
+		left: -100%;
+	}
+}
+
+.fade{
+	animation-name: fades;
+	animation-duration: 1s;
+}
+
+.fade-1{
+	animation-name: fade-1;
+	animation: fade-1;
 }
