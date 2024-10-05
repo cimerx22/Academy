@@ -1,7 +1,5 @@
 let lista = document.querySelectorAll(".nav-items-planos ul li");
 
-let imagemPlanos = document.querySelector(".img-plano img");
-
 let precos = [
 	[50, 30, 30, 10, 40],
 	[50123, 1530, 30, 10, 40],
@@ -9,15 +7,17 @@ let precos = [
 	[50, 30, 512330, 10, 30],
 ];
 
-let img = document.querySelector(".img-plano img");
-
 let img_planos = document.querySelectorAll(".img-plano img");
 
 let valores_planos = document.querySelectorAll(".valores");
 
 let click = false;
 
+let indexPlanos;
+
 lista.forEach(function (elemento) {
+
+	let valorPreco;
 
 	elemento.addEventListener("click", function () {
 
@@ -43,46 +43,35 @@ lista.forEach(function (elemento) {
 					case "musc":
 	
 						img_planos[0].classList.toggle("img-active", true);
-						valores_planos.forEach(function (el, ind) {
-							el.innerText = precos[0][ind];
-						});
-	
-	
+						indexPlanos = 0;
 						break;
 	
 					case "cros":
 						img_planos[1].classList.toggle("img-active", true);
-						valores_planos.forEach(function (el, ind) {
-							el.innerText = precos[1][ind];
-							
-						});
+						indexPlanos = 1;
 						break;
 	
 					case "boxe":
 						img_planos[2].classList.toggle("img-active", true);
-						valores_planos.forEach(function (el, ind) {
-							el.innerText = precos[2][ind];
-							
-						});
+						indexPlanos = 2;
 						break;
 	
 					case "dance":
 						img_planos[3].classList.toggle("img-active", true);
-						valores_planos.forEach(function (el, ind) {
-							el.innerText = precos[3][ind];
-							
-						});
+						indexPlanos = 3;
 						break;
 	
 					default:
 						console.log("algum erro");
-	
 						break;
 				}
 	
-				valores_planos.forEach((valoresEl)=>{
+				valores_planos.forEach((valoresEl, ind)=>{
 					valoresEl.classList.remove("vLeft");
-				})
+					valorPreco = precos[indexPlanos][ind];
+
+					valoresEl.innerText = valorPreco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+				}) 
 				
 			}
 

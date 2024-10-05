@@ -613,7 +613,9 @@ main {
 	margin: auto;
 
 	& .planos-titulo {
+
 		& p {
+			color: white;
 			font-family: "suez one";
 			margin: 0;
 			padding: 0;
