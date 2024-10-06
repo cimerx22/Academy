@@ -81,3 +81,38 @@ lista.forEach(function (elemento) {
 
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// feedbacks
+
+let feeds = document.querySelector(".feeds");
+
+let itemsFeed = document.querySelectorAll(".feed-item");
+
+
+let feedValorTotal = 0;
+
+itemsFeed.forEach(function(elemento){
+
+	let estilos = getComputedStyle(elemento).width
+
+	// let valor = Number(estilos.split('').slice(0, - 2).join(""));
+
+	feedValorTotal += 215 + 30;
+	
+	
+})
+
+let retorno = feeds.style.width = `${feedValorTotal}px`
+
+console.log(retorno);
