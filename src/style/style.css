@@ -4,7 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
 	/* variáveis de cores */
@@ -20,7 +22,7 @@
 
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0; 
+	margin: 0;
 }
 
 html {
@@ -30,7 +32,7 @@ html {
 }
 
 body {
-	background-color: #050E13;
+	background-color: #050e13;
 }
 
 /* header */
@@ -43,7 +45,7 @@ header {
 	justify-content: center;
 	align-items: center;
 
-  /* top bar */
+	/* top bar */
 
 	& .top-bar {
 		max-width: 1000px;
@@ -52,54 +54,52 @@ header {
 		display: flex;
 		justify-content: space-between;
 
-    & .contact {
-      display: flex;
-      gap: 20px;
+		& .contact {
+			display: flex;
+			gap: 20px;
 
-      & h5 {
-        font-family: "poppins";
-        font-size: 1.8rem;
-        margin: 0;
-        line-height: normal;
-      }
+			& h5 {
+				font-family: "poppins";
+				font-size: 1.8rem;
+				margin: 0;
+				line-height: normal;
+			}
 
-      & .icon-phone {
-        display: flex;
-        height: auto;
-        gap: 9px;
-        justify-content: space-between;
-        align-items: center;
-      }
+			& .icon-phone {
+				display: flex;
+				height: auto;
+				gap: 9px;
+				justify-content: space-between;
+				align-items: center;
+			}
 
-      & .icon-contact {
-        display: flex;
-        height: auto;
-        gap: 9px;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
+			& .icon-contact {
+				display: flex;
+				height: auto;
+				gap: 9px;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
 
-    & .social-media {
-      display: flex;
+		& .social-media {
+			display: flex;
 
-      & .container-sm {
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-      }
-    }
-
+			& .container-sm {
+				display: flex;
+				gap: 10px;
+				justify-content: space-between;
+			}
+		}
 	}
 
-  & i:nth-child(1) {
-    font-size: 2.5rem;
-  }
-  
-  & i:nth-child(2) {
-    font-size: 2.7rem;
-  }
+	& i:nth-child(1) {
+		font-size: 2.5rem;
+	}
 
+	& i:nth-child(2) {
+		font-size: 2.7rem;
+	}
 }
 
 /* section > hero */
@@ -262,9 +262,8 @@ main {
 	width: 370px;
 	height: 530px;
 	margin: auto;
-	top:40px; 
+	top: 40px;
 	position: relative;
-
 
 	& img:nth-child(1) {
 		width: 100%;
@@ -277,12 +276,8 @@ main {
 		position: absolute;
 		right: 0;
 		z-index: 1;
-
 	}
-
 }
-
-
 
 /* section > hero > menu */
 
@@ -348,18 +343,18 @@ main {
 	align-self: flex-end;
 }
 
-.carousel{
+.carousel {
 	max-width: 1000px;
 	margin: 0 auto 50px auto;
 	position: relative;
 
-	& #starUnion{
+	& #starUnion {
 		position: absolute;
 		top: px;
 		right: 0;
 	}
 
-	& .carousel-title{
+	& .carousel-title {
 		width: 500px;
 		margin: 50px auto;
 		display: flex;
@@ -368,56 +363,43 @@ main {
 		/* background-color: aqua; */
 		gap: 30px;
 
-		& .title{
+		& .title {
 			color: white;
-	
-			& span:nth-child(1){
+
+			& span:nth-child(1) {
 				color: var(--green-light);
 				font-size: 4.2rem;
 			}
 
-			& span:nth-child(2){
+			& span:nth-child(2) {
 				color: black;
 				font-size: 3rem;
-				text-shadow:
-				-1px -1px 0 white,
-				-1px 1px 0 white,
-				1px -1px 0 white,
-				1px 0 0 white;
+				text-shadow: -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
+					1px 0 0 white;
 			}
 		}
 
-		& img{
+		& img {
 			width: 50px;
 			height: 50px;
 		}
 	}
 
-	
-
-	& .carousel-inner{
+	& .carousel-inner {
 		width: 90%;
 		margin: auto;
 
-		& .carousel-item{
-
-			& img{
+		& .carousel-item {
+			& img {
 				width: 100%;
 				height: 300px;
 				object-fit: cover;
 			}
 		}
-
 	}
-
-	
 }
 
-
-
-
-.cta{
-
+.cta {
 	max-width: 1000px;
 	margin: auto;
 	height: 547px;
@@ -429,26 +411,25 @@ main {
 	background-repeat: no-repeat;
 	background-position: center;
 
-	& .cta-content{
-
-		& .cta-title{
+	& .cta-content {
+		& .cta-title {
 			color: white;
 			display: flex;
 			flex-direction: column;
 			width: 280px;
 
-			& h1{
+			& h1 {
 				font-size: 8rem;
 				font-family: "Saira Stencil One", sans-serif;
 				text-shadow: 20px 5px 30px var(--green-dark);
 				width: auto;
 				height: auto;
 				margin: 0;
-				transform: rotate(-.5deg);
+				transform: rotate(-0.5deg);
 			}
 
-			& h3{
-				font-size: 	3.5rem;
+			& h3 {
+				font-size: 3.5rem;
 				font-family: "Saira Stencil One", sans-serif;
 				width: auto;
 				height: auto;
@@ -456,21 +437,21 @@ main {
 				align-self: end;
 			}
 
-			& span{
+			& span {
 				color: var(--green-dark);
 			}
 		}
 
-		& p{
+		& p {
 			color: white;
 			font-size: 1.3rem;
 			margin: 20px 0;
 			width: 400px;
 			font-family: "Suez One", serif;
-			font-weight:normal;
+			font-weight: normal;
 		}
 
-		& .cta-button{
+		& .cta-button {
 			padding: 20px 5px;
 			font-family: "Suez One", serif;
 			font-size: 2rem;
@@ -479,25 +460,21 @@ main {
 			border: solid 2px var(--green-dark);
 			border-radius: 50px;
 			margin: 0 0 0 40px;
-			
 		}
 	}
 
-	& .cta-img{
+	& .cta-img {
 		width: 305px;
 		height: 440px;
 
-		& img{
+		& img {
 			width: 100%;
 			height: 100%;
 		}
 	}
-
 }
 
-
-
-.services-content{
+.services-content {
 	background-image: url(../imgs/services-background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -509,8 +486,7 @@ main {
 	display: flex;
 	justify-content: space-evenly;
 
-
-	& .services{
+	& .services {
 		width: 279px;
 		height: 365px;
 		background-color: rgba(9, 20, 28, 0.7);
@@ -520,36 +496,30 @@ main {
 		padding: 15px;
 		align-self: center;
 
-		& .services-title{
-
-			& p{
-				font-family: 'poppins';
+		& .services-title {
+			& p {
+				font-family: "poppins";
 			}
 
-
-			& p:nth-child(1){
+			& p:nth-child(1) {
 				font-size: 1.8rem;
 				margin: 0;
 			}
 
-			& p:nth-child(2){
+			& p:nth-child(2) {
 				font-size: 3rem;
 				color: var(--green-light);
 				font-weight: bold;
 			}
-
 		}
 
-		& > p{
+		& > p {
 			font-size: 1.8rem;
-			font-family: 'poppins';
+			font-family: "poppins";
 		}
-
 	}
 
-
-	& .services-container-item{
-
+	& .services-container-item {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		grid-row: auto auto;
@@ -562,8 +532,7 @@ main {
 		align-items: center;
 		width: 60%;
 
-
-		& .services-item{
+		& .services-item {
 			height: 95%;
 			background-color: rgba(9, 20, 28, 0.7);
 			display: flex;
@@ -573,47 +542,48 @@ main {
 			gap: 10px;
 			border: 2px solid var(--green-dark);
 			border-radius: 10px;
-	
-	
-	
-			& img{
+
+			& img {
 				width: 62px;
 				height: 62px;
 			}
-	
-			& .item-content{
+
+			& .item-content {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				max-width: 70%;
-	
-				& h4{
+
+				& h4 {
 					font-size: 1.8rem;
 					font-family: "poppins";
 				}
-	
-				& p{
+
+				& p {
 					font-size: 1.2rem;
 					font-family: "poppins";
 					text-align: left;
 				}
 			}
-	
 		}
 	}
-
-
-	
-
 }
 
 .planos {
 	max-width: 1000px;
-	margin: auto;
+	position: relative;
+	margin: 100px auto;
+
+	& .seta-superior {
+		width: auto;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
 	& .planos-titulo {
-
 		& p {
 			color: white;
 			font-family: "suez one";
@@ -674,11 +644,11 @@ main {
 				cursor: pointer;
 			}
 
-            .actives{
-                background-color: var(--green-dark);
-                color: black;
-                transition: all 1s;
-            }
+			.actives {
+				background-color: var(--green-dark);
+				color: black;
+				transition: all 1s;
+			}
 		}
 	}
 
@@ -687,26 +657,26 @@ main {
 		justify-content: space-around;
 
 		& .img-plano {
-            width: 340px;
-            height: 523px;
+			width: 340px;
+			height: 523px;
 			position: relative;
 
-            & img{
-                width: 100%;
-                height: 100%;
+			& img {
+				width: 100%;
+				height: 100%;
 				position: absolute;
-                object-fit: contain;
+				object-fit: contain;
 				transform: translateX(-100%);
 				opacity: 0;
-				transition: all .3s ease-in;
+				transition: all 0.3s ease-in;
 				z-index: -1;
-            }
+			}
 
-			& .img-active{
+			& .img-active {
 				transform: translateX(0);
 				opacity: 1;
 			}
-        }
+		}
 
 		& .items-conteudo {
 			& ul {
@@ -715,7 +685,6 @@ main {
 				flex-direction: column;
 				justify-content: center;
 				gap: 50px;
-				
 
 				& li {
 					font-size: 2rem;
@@ -726,25 +695,25 @@ main {
 					font-family: "Poppins";
 					font-weight: bold;
 					display: flex;
-                    justify-content: space-between;
+					justify-content: space-between;
 					align-items: center;
 					padding: 0 20px 0 20px;
 					border-radius: 0 0 30px 0;
 					position: relative;
 					z-index: 2;
 
-                    & .valores{
+					& .valores {
 						display: inline-block;
-                        font-size: 3rem;
+						font-size: 3rem;
 						transition: all 0.7s ease;
-                    }
+					}
 
-					& .vLeft{
+					& .vLeft {
 						transform: translateX(100%);
 						opacity: 0;
 					}
 
-					& .span-active{
+					& .span-active {
 						transform: translateX(0);
 						opacity: 1;
 					}
@@ -763,31 +732,260 @@ main {
 					border-radius: 0 0 30px 0;
 				}
 
-                & li:nth-child(1)::after {
-                    content: "AVALIAÇÃO FISICA";
-                  }
-                  
-                  & li:nth-child(2)::after {
-                    content: "PLANO INTERMEDIÁRIO";
-                  }
-                  
-                  & li:nth-child(3)::after {
-                    content: "PLANO MENSAL";
-                  }
-                  
-                  & li:nth-child(4)::after {
-                    content: "PLANO SEMESTRAL";
-                  }
-                  
-                  & li:nth-child(5)::after {
-                    content: "PLANO ANUAL";
-                  }
+				& li:nth-child(1)::after {
+					content: "AVALIAÇÃO FISICA";
+				}
 
+				& li:nth-child(2)::after {
+					content: "PLANO INTERMEDIÁRIO";
+				}
+
+				& li:nth-child(3)::after {
+					content: "PLANO MENSAL";
+				}
+
+				& li:nth-child(4)::after {
+					content: "PLANO SEMESTRAL";
+				}
+
+				& li:nth-child(5)::after {
+					content: "PLANO ANUAL";
+				}
 			}
 		}
 	}
 }
 
+.foxfit2 {
+	max-width: 1000px;
+	margin: 50px auto;
+	height: auto;
+
+	display: flex;
+	justify-content: space-between;
+
+	& .fit-content {
+		& .fit-title {
+			position: relative;
+
+			& img {
+				width: 136.25px;
+				height: 125.64px;
+			}
+
+			& h1 {
+				font-family: "DM Sans", sans-serif;
+				font-size: 7rem;
+				color: var(--green-dark);
+				font-weight: bold;
+				text-shadow: 20px 5px 30px var(--green-dark);
+				position: absolute;
+				top: 10px;
+				left: 70px;
+
+				& span {
+					color: white;
+				}
+			}
+		}
+
+		& > p {
+			font-family: "poppins";
+			font-size: 2rem;
+			width: 337.36px;
+			color: white;
+
+			margin: 30px 0;
+		}
+	}
+
+	& .content-img {
+		display: flex;
+		gap: 10px;
+
+		& .bx-content {
+			width: 230.25px;
+			height: 130px;
+			background-color: var(--blue-light);
+
+			& h2 {
+				color: white;
+				font-family: "poppins";
+				font-size: 2.5rem;
+				text-align: center;
+				padding-top: 5px;
+			}
+
+			& p {
+				color: white;
+				font-family: "poppins";
+				font-size: 1.5rem;
+				max-width: 90%;
+				margin: auto;
+			}
+		}
+
+		& .bx-1 {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			& .bx-content {
+				box-shadow: -10px 10px 0 var(--green-dark);
+			}
+		}
+
+		& .bx-2 {
+			display: flex;
+			flex-direction: column-reverse;
+			gap: 10px;
+
+			& .bx-content {
+				box-shadow: 10px -10px 0 var(--green-dark);
+			}
+		}
+	}
+}
+
+.treinadores {
+	max-width: 1000px;
+	margin: 50px auto;
+
+	& .box{
+		position: relative;
+	}
+
+	& .treinadores-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 200px;
+
+		& .title {
+			font-family: "Suez One";
+			position: relative;
+
+			& > p {
+				font-size: 25rem;
+				line-height: 50px;
+				color: rgba(38, 72, 22, 1);
+				margin: 0;
+			}
+
+			& .title-text {
+				position: absolute;
+				color: white;
+				top: 15px;
+				left: 100px;
+
+				& h3 {
+					font-size: 3.5rem;
+					display: flex;
+					align-items: center;
+					margin: 0;
+					gap: 15px;
+				}
+
+				& h1 {
+					font-size: 6.5rem;
+					line-height: 50px;
+					padding-left: 20px;
+					& span {
+						color: var(--green-dark);
+					}
+				}
+			}
+		}
+
+		& .icon-prev-next {
+			align-self: end;
+			font-size: 30px;
+			& i {
+				color: var(--green-dark);
+			}
+
+			& i:nth-child(1) {
+			}
+
+			& i:nth-child(2) {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+
+	& .treinadores-content {
+
+		margin-top: 50px;
+
+		display: flex;
+		justify-content: space-evenly;
+
+		& .item-treinadores {
+			position:relative ;
+			z-index: 1;
+			width: 190.01px;
+			height: 269.03px;
+			background-color: var(--blue-light);
+
+			clip-path: polygon(
+				20% 0%,
+				100% 0,
+				100% 20%,
+				100% 94%,
+				95% 100%,
+				0 100%,
+				0% 80%,
+				0 0
+			);
+
+			& img {
+				/* clip path: inset, usei pra remover umas bordas das imagens = gambiarra */
+				width: 100%;
+				clip-path: inset(2px); 
+			}
+
+			& .item-content{
+				
+				font-family: "Poppins";
+				color: white;
+
+
+				& h1{
+					font-size: 2.5rem;
+					text-align: center;
+					margin: 0;
+				}
+
+				& p{
+					font-size: 1.3rem;
+					margin: 0;
+					text-align: center;
+				}
+
+			}
+		}
+
+		& .shadow {
+			position: absolute; /* Para sobrepor à caixa */
+			top: 5px;
+			left: 5px;
+			width: 190.01px;
+			height: 269.03px;
+			background-color: var(--green-dark); /* Cor da sombra */
+			clip-path: polygon(
+				20% 0%,
+				100% 0,
+				100% 20%,
+				100% 94%,
+				95% 100%,
+				0 100%,
+				0% 80%,
+				0 0
+			); /* Mesma forma */
+			z-index: 0; /* Coloca a sombra atrás da caixa */
+		}
+	}
+}
 
 
 
