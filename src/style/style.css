@@ -917,9 +917,18 @@ main {
 
 	& .treinadores-content {
 		margin-top: 50px;
+		overflow: hidden;
+		scroll-behavior: smooth;
 
-		display: flex;
-		justify-content: space-evenly;
+
+		& .container-content{
+			display: flex;
+			align-items: center;
+			height: 300px;
+			gap: 70px;
+			width: 400%;
+		}
+
 
 		& .item-treinadores {
 			position: relative;

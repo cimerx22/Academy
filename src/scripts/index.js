@@ -1,4 +1,10 @@
+"use strict"
+
 let lista = document.querySelectorAll(".nav-items-planos ul li");
+let click = false;
+let indexPlanos;
+let valores_planos = document.querySelectorAll(".valores");
+let img_planos = document.querySelectorAll(".img-plano img");
 
 let precos = [
 	[50, 30, 30, 10, 40],
@@ -6,14 +12,6 @@ let precos = [
 	[503, 350, 330, 110, 20],
 	[50, 30, 512330, 10, 30],
 ];
-
-let img_planos = document.querySelectorAll(".img-plano img");
-
-let valores_planos = document.querySelectorAll(".valores");
-
-let click = false;
-
-let indexPlanos;
 
 lista.forEach(function (elemento) {
 
@@ -85,34 +83,45 @@ lista.forEach(function (elemento) {
 
 
 
+// Equipe
 
 
+let prev = document.querySelector(".icon-prev-next i:nth-child(1)")
+let next = document.querySelector(".icon-prev-next i:nth-child(2)")
+let scrollTreinador = document.querySelector(".treinadores-content")
+let itemTreinador = document.querySelectorAll(".treinadores-content .container-content .box")
 
 
+function valorTotal(arr, valorWidth){
 
+	let valor = 0;
 
+	arr.forEach(()=>{
+		valor += valorWidth;
+	})
 
+	return valor;
 
-// feedbacks
+}
 
-let feeds = document.querySelector(".feeds");
-
-let itemsFeed = document.querySelectorAll(".feed-item");
-
-
-let feedValorTotal = 0;
-
-itemsFeed.forEach(function(elemento){
-
-	let estilos = getComputedStyle(elemento).width
-
-	// let valor = Number(estilos.split('').slice(0, - 2).join(""));
-
-	feedValorTotal += 215 + 30;
-	
-	
+prev.addEventListener("click", ()=>{
+	scrollTreinador.scrollLeft -= 400;
 })
 
-let retorno = feeds.style.width = `${feedValorTotal}px`
+next.addEventListener("click", ()=>{
+	scrollTreinador.scrollLeft += 400;
+})
 
-console.log(retorno);
+
+
+
+let feeds = document.querySelector(".feeds");
+let itemsFeed = document.querySelectorAll(".feed-item");
+let containerTreinador = document.querySelector(".treinadores-content .container-content")
+
+containerTreinador.style.width = `${valorTotal(itemTreinador, 200)}px`;
+feeds.style.width = `${valorTotal(itemsFeed, 245)}px`
+
+
+
+
