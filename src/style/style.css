@@ -37,6 +37,31 @@ body {
 	background-color: #050e13;
 }
 
+/* body {
+	background: linear-gradient(-45deg, #000, #000, rgba(73, 130, 20,0.4));
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+
+/* classes globais */
+
+.max-largura {
+}
+
 /* header */
 
 header {
@@ -111,7 +136,79 @@ main {
 	height: auto;
 	position: relative;
 	width: 100%;
+
+	& .menu {
+		height: 80px;
+		max-width: 900px;
+		width: 900px;
+		display: flex;
+		background-color: var(--blue-light);
+		margin: auto;
+		justify-content: space-between;
+		border-radius: 40px;
+
+		& .menu-logo {
+			padding-left: 40px;
+
+			& img {
+				width: 70px;
+				height: 70px;
+			}
+		}
+
+		#menu {
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 25px;
+			padding-right: 40px;
+			margin: 0;
+
+			& li {
+				& a {
+					color: #e2e2e2;
+					text-decoration: none;
+					font-family: "Poppins";
+					font-size: 16px;
+				}
+			}
+		}
+
+		& .button-menu {
+			display: none;
+			flex-direction: column;
+			gap: 10px;
+			align-items: center;
+			justify-content: center;
+
+			& .line {
+				width: 70px;
+				height: 10px;
+				background-color: white;
+				border-radius: 15px;
+			}
+			
+			& .line:nth-child(1) {
+				width: 35px;
+				align-self: flex-start;
+			}
+			
+			& .line:nth-child(3) {
+				width: 35px;
+				align-self: flex-end;
+			}
+		}
+
+
+	}
 }
+
+/* section > hero > menu */
+
+
+
+/* hero */
 
 .hero {
 	margin-top: 30px;
@@ -119,38 +216,46 @@ main {
 	height: auto;
 	display: flex;
 	justify-content: center;
+
+
+	.content-hero {
+		max-width: 1000px;
+		width: 1000px;
+		height: 600px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+
+		.onion-top {
+			bottom: 0;
+			left: 0;
+		}
+
+		.text-content-hero {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 500px;
+		}
+	}
+
 }
 
-.content-hero {
-	max-width: 1000px;
-	width: 1000px;
-	height: 600px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-}
+
 
 .content-hero > img {
 	position: absolute;
 }
 
-.onion-top {
-	bottom: 0;
-	left: 0;
-}
+
 
 .onion-bottom {
 	top: 0;
 	right: 0;
 }
 
-.text-content-hero {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 500px;
-}
+
 
 .text-hero {
 	width: 150px;
@@ -279,70 +384,6 @@ main {
 		right: 0;
 		z-index: 1;
 	}
-}
-
-/* section > hero > menu */
-
-.hero-menu {
-	height: 80px;
-	max-width: 900px;
-	width: 900px;
-	display: flex;
-	background-color: var(--blue-light);
-	margin: auto;
-	justify-content: space-between;
-	border-radius: 40px;
-}
-
-.menu-logo {
-	padding-left: 40px;
-}
-
-.menu-logo img {
-	width: 70px;
-	height: 70px;
-}
-
-#menu {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 25px;
-	padding-right: 40px;
-	margin: 0;
-}
-
-#menu li a {
-	color: #e2e2e2;
-	text-decoration: none;
-	font-family: "Poppins";
-	font-size: 16px;
-}
-
-.button-menu {
-	display: none;
-	flex-direction: column;
-	gap: 10px;
-	align-items: center;
-	justify-content: center;
-}
-
-.line {
-	width: 70px;
-	height: 10px;
-	background-color: white;
-	border-radius: 15px;
-}
-
-.line:nth-child(1) {
-	width: 35px;
-	align-self: flex-start;
-}
-
-.line:nth-child(3) {
-	width: 35px;
-	align-self: flex-end;
 }
 
 .carousel {
@@ -920,15 +961,13 @@ main {
 		overflow: hidden;
 		scroll-behavior: smooth;
 
-
-		& .container-content{
+		& .container-content {
 			display: flex;
 			align-items: center;
 			height: 300px;
 			gap: 70px;
 			width: 400%;
 		}
-
 
 		& .item-treinadores {
 			position: relative;
@@ -1210,7 +1249,7 @@ main {
 	height: 500px;
 	background-image: url(../imgs/apresentacao/img1.png);
 	background-repeat: no-repeat;
-	background-size: cover	;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1223,7 +1262,6 @@ main {
 			text-align: center;
 			line-height: 10rem;
 			& span {
-
 				color: transparent; /* Texto invisível */
 				-webkit-text-stroke: 1px white; /* Contorno branco */
 			}
@@ -1234,15 +1272,13 @@ main {
 			color: white;
 			text-align: center;
 			& span {
-
 				color: var(--green-dark);
 			}
 		}
 	}
 }
 
-
-footer{
+footer {
 	max-width: 1000px;
 	margin: auto;
 	height: 360px;
@@ -1253,96 +1289,80 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	border-radius: 50px -50px 0 0;	
+	border-radius: 50px -50px 0 0;
 	position: relative;
-	
+
 	margin-top: -30px;
 
-	& .bx1{
+	& .bx1 {
+		font-family: "Rozha One";
 
-		font-family: 'Rozha One';
-
-		& p{
+		& p {
 			margin-top: 15px;
 			color: white;
 			width: 231.52px;
 			font-size: 2rem;
 		}
 
-		& .redes-sociais{
+		& .redes-sociais {
 			margin-top: 40px;
 			display: flex;
 			gap: 20px;
 
-			& i{
+			& i {
 				font-size: 45.1px;
 				color: white;
 			}
-			
-			& i:nth-child(1){
 
+			& i:nth-child(1) {
 			}
-			& i:nth-child(2){
+			& i:nth-child(2) {
 				font-size: 47.1px;
 			}
-
 		}
 	}
 
-	& .bx2{
-
-		& ul{
+	& .bx2 {
+		& ul {
 			list-style: none;
 			display: flex;
 			flex-direction: column;
 			gap: 30px;
 
-			& li{
+			& li {
 				color: white;
-				font-family: 'Rozha One';
+				font-family: "Rozha One";
 				font-size: 2rem;
 			}
 
-			& li{
+			& li {
 				display: flex;
 				gap: 10px;
-				& i{
+				& i {
 					width: 35px;
 					font-size: 3rem;
 				}
-
 			}
 
-			& li:nth-child(1)::before{
-				
+			& li:nth-child(1)::before {
 			}
-			& li:nth-child(2)::before{
-
+			& li:nth-child(2)::before {
 			}
-			& li:nth-child(3)::before{
-
+			& li:nth-child(3)::before {
 			}
-			& li:nth-child(4)::before{
-
+			& li:nth-child(4)::before {
 			}
-
 		}
-		
 	}
 
-	& .bx3{
+	& .bx3 {
+		padding-bottom: 30px;
 
-		padding-bottom: 30px ;
-
-		& iframe{
+		& iframe {
 			width: 242.28px;
 			height: 262.101px;
 		}
-
-		
 	}
-
-
 }
 
 /* media query */
@@ -1410,7 +1430,7 @@ footer{
 		font-size: 1.4rem;
 	}
 
-	.hero-menu {
+	.menu {
 		width: 100%;
 	}
 
@@ -1448,7 +1468,7 @@ footer{
 		font-size: 1.4rem;
 	}
 
-	.hero-menu {
+	.menu {
 		max-width: 99%;
 		width: 99%;
 	}
