@@ -34,8 +34,26 @@ html {
 }
 
 body {
-	background-color: #050e13;
+	background-color: var(--blue-dark);
 }
+
+#particles-js {
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	
+}
+
+canvas {
+	
+	position: absolute;
+	vertical-align: bottom;
+	height: 100% !important;
+	z-index: -1;
+}
+
+
 
 /* body {
 	background: linear-gradient(-45deg, #000, #000, rgba(73, 130, 20,0.4));
@@ -55,7 +73,6 @@ body {
 		background-position: 0% 50%;
 	}
 } */
-
 
 /* classes globais */
 
@@ -188,25 +205,21 @@ main {
 				background-color: white;
 				border-radius: 15px;
 			}
-			
+
 			& .line:nth-child(1) {
 				width: 35px;
 				align-self: flex-start;
 			}
-			
+
 			& .line:nth-child(3) {
 				width: 35px;
 				align-self: flex-end;
 			}
 		}
-
-
 	}
 }
 
 /* section > hero > menu */
-
-
 
 /* hero */
 
@@ -216,7 +229,6 @@ main {
 	height: auto;
 	display: flex;
 	justify-content: center;
-
 
 	.content-hero {
 		max-width: 1000px;
@@ -239,23 +251,16 @@ main {
 			width: 500px;
 		}
 	}
-
 }
-
-
 
 .content-hero > img {
 	position: absolute;
 }
 
-
-
 .onion-bottom {
 	top: 0;
 	right: 0;
 }
-
-
 
 .text-hero {
 	width: 150px;
@@ -1174,9 +1179,10 @@ main {
 
 .feedback {
 	max-width: 1000px;
-	margin: auto;
 	height: 400px;
-	background-color: var(--blue-light);
+	background-color: rgba(15, 42, 57, 0.3);
+	margin: 10px auto;
+	border-radius: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

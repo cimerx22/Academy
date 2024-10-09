@@ -125,3 +125,4 @@ feeds.style.width = `${valorTotal(itemsFeed, 245)}px`
 
 
 
+
