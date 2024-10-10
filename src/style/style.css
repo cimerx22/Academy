@@ -17,6 +17,7 @@
 	--blue-dark: #0a1720;
 	--green-dark: #74cf21;
 	--green-light: #9ef176;
+	--width-padrao: 1200px;
 }
 
 * {
@@ -51,9 +52,9 @@ canvas {
 }
 
 /* classes globais */
-.section-padrão {
+.section-padrao {
 	max-width: 1200px;
-	margin: 50px auto;
+	margin: 50px auto 0 auto;
 }
 
 /* header */
@@ -363,8 +364,6 @@ main {
 	}
 
 	& .carousel {
-		max-width: 1000px;
-		margin: 0 auto 50px auto;
 		position: relative;
 
 		& #starUnion {
@@ -407,6 +406,7 @@ main {
 		& .carousel-inner {
 			width: 90%;
 			margin: auto;
+			background: #74cf21;
 
 			& .carousel-item {
 				& img {
@@ -419,8 +419,6 @@ main {
 	}
 
 	& .cta {
-		max-width: 1000px;
-		margin: auto;
 		height: 547px;
 		display: flex;
 		justify-content: space-around;
@@ -497,8 +495,7 @@ main {
 		background-image: url(../imgs/services-background.png);
 		background-repeat: no-repeat;
 		background-size: cover;
-		max-width: 1000px;
-		margin: auto;
+		border-radius: 20px;
 		height: 500px;
 		color: white;
 
@@ -545,14 +542,14 @@ main {
 
 			gap: 10px;
 			justify-content: stretch;
-			align-content: stretch;
+			align-content: center;
 
 			justify-items: center;
 			align-items: center;
 			width: 60%;
 
 			& .services-item {
-				height: 95%;
+				height: 200px;
 				background-color: rgba(9, 20, 28, 0.7);
 				display: flex;
 				flex-direction: column;
@@ -590,9 +587,7 @@ main {
 	}
 
 	& .planos {
-		max-width: 1000px;
 		position: relative;
-		margin: 100px auto;
 
 		& .seta-superior {
 			width: auto;
@@ -603,6 +598,8 @@ main {
 		}
 
 		& .planos-titulo {
+
+
 			& p {
 				color: white;
 				font-family: "suez one";
@@ -612,44 +609,55 @@ main {
 				line-height: 4rem;
 			}
 
-			& p:nth-child(1) {
+			/* & p:nth-child(1) {
 				font-family: "suez one";
 				font-size: 3rem;
-			}
+			} */
 
 			& .custom-text-planos {
 				position: relative;
+				/* position: absolute; */
 
 				& > #custom-text {
-					position: absolute;
+					position: relative;
 					font-family: "suez one";
-					top: 0;
-					left: -130px;
 					font-size: 25rem;
 					color: rgba(38, 72, 22, 1);
+					top: 30px;
 				}
 
-				& > p {
+				& > p:nth-child(2) {
 					position: relative;
+					left: 120px;
+					bottom: 20px;
 					z-index: 2;
 					color: var(--green-dark);
+					display: inline-block;
+					font-size: 4rem;
 				}
 			}
 
-			& p:nth-child(2) {
+			& > p{
 				font-size: 4rem;
+				position: relative;
+				left: 140px;
+				line-height: 40%;
 			}
 		}
 
 		& .nav-items-planos {
-			margin: 40px 0;
+			margin: 70px 0;
 
 			& ul {
 				list-style: none;
 				display: flex;
 				gap: 40px;
 				justify-content: center;
-
+				padding: 20px 1px;
+				background-color: rgba(15, 42, 57, 0.3);
+				width: 80%;
+				margin: auto;
+				border-radius: 20px;
 				& li {
 					font-family: "Poppins";
 					width: 150px;
@@ -776,8 +784,6 @@ main {
 	}
 
 	& .foxfit2 {
-		max-width: 1000px;
-		margin: 50px auto;
 		height: auto;
 	
 		display: flex;
@@ -867,9 +873,8 @@ main {
 	}
 	
 	& .treinadores {
-		max-width: 1000px;
-		margin: 50px auto;
-	
+		
+
 		& .box {
 			position: relative;
 		}
@@ -878,7 +883,7 @@ main {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			height: 200px;
+			height: 100px;
 	
 			& .title {
 				font-family: "Suez One";
@@ -933,7 +938,7 @@ main {
 		}
 	
 		& .treinadores-content {
-			margin-top: 50px;
+			margin-top: 100px;
 			overflow: hidden;
 			scroll-behavior: smooth;
 	
@@ -1010,8 +1015,6 @@ main {
 	}
 	
 	& .galeria {
-		max-width: 1000px;
-		margin: 150px auto 0 auto;
 	
 		& .galeria-header {
 			display: flex;
@@ -1149,17 +1152,15 @@ main {
 	}
 	
 	& .feedback {
-		max-width: 1000px;
 		height: 400px;
 		background-color: rgba(15, 42, 57, 0.3);
-		margin: 10px auto;
 		border-radius: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	
 		& .container-feed {
-			width: 80%;
+			width: 90%;
 			height: 80%;
 			overflow: auto;
 	
@@ -1221,8 +1222,6 @@ main {
 	}
 	
 	& .apresentacao {
-		max-width: 1000px;
-		margin: auto;
 		height: 500px;
 		background-image: url(../imgs/apresentacao/img1.png);
 		background-repeat: no-repeat;
@@ -1231,6 +1230,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		font-family: "Rozha One", serif;
+		border-radius: 30px;
 	
 		& .container-apresentacao {
 			& h1:nth-child(1) {
@@ -1258,11 +1258,10 @@ main {
 }
 
 footer {
-	max-width: 1000px;
-	margin: auto;
-	height: 360px;
+	max-width: var(--width-padrao);
+	margin: 50px auto 0 auto;
+	height: 450px;
 	background-image: url(../imgs/footer/img11.png);
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -1270,8 +1269,6 @@ footer {
 	align-items: center;
 	border-radius: 50px -50px 0 0;
 	position: relative;
-
-	margin-top: -30px;
 
 	& .bx1 {
 		font-family: "Rozha One";

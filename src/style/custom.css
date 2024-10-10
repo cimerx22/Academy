@@ -1,22 +1,3 @@
-.carousel-control-prev{
-    & i{
-        transform: rotate(180deg);
-    }
-}
-
-.carousel-control-prev{
-    left: -100px;
-}
-
-.carousel-control-next{
-    right: -100px;
-
-    & span{
-        background-color: aquamarine;
-        padding: 20px;
-    }
-}
-
 .carousel{
     & i{
         color: greenyellow;
@@ -26,3 +7,33 @@
         border-radius: 50%;
     }
 }
+
+.carousel-control-prev{
+
+    z-index: 50;
+    /* left: -100px;
+    right: -100px; */
+
+    & i{
+        transform: rotate(180deg);
+    }
+
+    & span{
+        background-color: aquamarine;
+        padding: 20px;
+    }
+}
+
+.container-carousel-inner{
+    position: relative;
+
+    & .carousel-control-prev{
+        left: -110px;
+    }
+
+    & .carousel-control-next{
+        right: -110px;
+    }
+}
+
+
