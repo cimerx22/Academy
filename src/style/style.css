@@ -598,8 +598,6 @@ main {
 		}
 
 		& .planos-titulo {
-
-
 			& p {
 				color: white;
 				font-family: "suez one";
@@ -637,7 +635,7 @@ main {
 				}
 			}
 
-			& > p{
+			& > p {
 				font-size: 4rem;
 				position: relative;
 				left: 140px;
@@ -785,19 +783,19 @@ main {
 
 	& .foxfit2 {
 		height: auto;
-	
+
 		display: flex;
 		justify-content: space-between;
-	
+
 		& .fit-content {
 			& .fit-title {
 				position: relative;
-	
+
 				& img {
 					width: 136.25px;
 					height: 125.64px;
 				}
-	
+
 				& h1 {
 					font-family: "DM Sans", sans-serif;
 					font-size: 7rem;
@@ -807,32 +805,32 @@ main {
 					position: absolute;
 					top: 10px;
 					left: 70px;
-	
+
 					& span {
 						color: white;
 					}
 				}
 			}
-	
+
 			& > p {
 				font-family: "poppins";
 				font-size: 2rem;
 				width: 337.36px;
 				color: white;
-	
+
 				margin: 30px 0;
 			}
 		}
-	
+
 		& .content-img {
 			display: flex;
 			gap: 10px;
-	
+
 			& .bx-content {
 				width: 230.25px;
 				height: 130px;
 				background-color: var(--blue-light);
-	
+
 				& h2 {
 					color: white;
 					font-family: "poppins";
@@ -840,7 +838,7 @@ main {
 					text-align: center;
 					padding-top: 5px;
 				}
-	
+
 				& p {
 					color: white;
 					font-family: "poppins";
@@ -849,59 +847,102 @@ main {
 					margin: auto;
 				}
 			}
-	
+
 			& .bx-1 {
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
-	
+
 				& .bx-content {
 					box-shadow: -10px 10px 0 var(--green-dark);
 				}
 			}
-	
+
 			& .bx-2 {
 				display: flex;
 				flex-direction: column-reverse;
 				gap: 10px;
-	
+
 				& .bx-content {
 					box-shadow: 10px -10px 0 var(--green-dark);
 				}
 			}
 		}
 	}
-	
-	& .treinadores {
-		
 
+	& .treinadores {
 		& .box {
 			position: relative;
+
+			/* .hover-animation{
+				bottom: 100px;
+			} */
+
+			& .hover-content {
+				position: absolute;
+				width: 100%;
+				height: 30%;
+				background-color: rgba(15, 42, 57, 1);
+				display: flex;
+				bottom: 0;
+				transform: translateY(100%);
+				justify-content: center;
+				align-items: center;
+				transition: all 0.9s ease;
+
+
+				& .hover-redes-sociais {
+					display: flex;
+					gap: 30px;
+
+					& i{
+						color: white;
+						transition: all .7s ease;
+					}
+
+					& i:nth-child(1) {
+						font-size: 2.5rem;
+					}
+
+					& i:nth-child(1):hover{
+						color: #3f5c9a;
+					}
+
+					& i:nth-child(2) {
+						font-size: 2.7rem;
+					}
+
+					& i:nth-child(2):hover{
+						color: #ff00cf;
+					}
+				}
+			}
 		}
-	
+
+
 		& .treinadores-header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			height: 100px;
-	
+
 			& .title {
 				font-family: "Suez One";
 				position: relative;
-	
+
 				& > p {
 					font-size: 25rem;
 					line-height: 50px;
 					color: rgba(38, 72, 22, 1);
 					margin: 0;
 				}
-	
+
 				& .title-text {
 					position: absolute;
 					color: white;
 					top: 15px;
 					left: 100px;
-	
+
 					& h3 {
 						font-size: 3.5rem;
 						display: flex;
@@ -909,7 +950,7 @@ main {
 						margin: 0;
 						gap: 15px;
 					}
-	
+
 					& h1 {
 						font-size: 6.5rem;
 						line-height: 50px;
@@ -920,28 +961,28 @@ main {
 					}
 				}
 			}
-	
+
 			& .icon-prev-next {
 				align-self: end;
 				font-size: 30px;
 				& i {
 					color: var(--green-dark);
 				}
-	
+
 				& i:nth-child(1) {
 				}
-	
+
 				& i:nth-child(2) {
 					transform: rotateY(180deg);
 				}
 			}
 		}
-	
+
 		& .treinadores-content {
 			margin-top: 100px;
 			overflow: hidden;
 			scroll-behavior: smooth;
-	
+
 			& .container-content {
 				display: flex;
 				align-items: center;
@@ -949,14 +990,15 @@ main {
 				gap: 70px;
 				width: 400%;
 			}
-	
+
 			& .item-treinadores {
 				position: relative;
 				z-index: 1;
 				width: 190.01px;
 				height: 269.03px;
 				background-color: var(--blue-light);
-	
+
+
 				clip-path: polygon(
 					20% 0%,
 					100% 0,
@@ -967,23 +1009,23 @@ main {
 					0% 80%,
 					0 0
 				);
-	
+
 				& img {
 					/* clip path: inset, usei pra remover umas bordas das imagens = gambiarra */
 					width: 100%;
 					clip-path: inset(2px);
 				}
-	
+
 				& .item-content {
 					font-family: "Poppins";
 					color: white;
-	
+
 					& h1 {
 						font-size: 2.5rem;
 						text-align: center;
 						margin: 0;
 					}
-	
+
 					& p {
 						font-size: 1.3rem;
 						margin: 0;
@@ -991,7 +1033,12 @@ main {
 					}
 				}
 			}
-	
+
+			& .item-treinadores:hover .hover-content{
+				bottom: 0;
+				transform: translateY(0);
+			}
+
 			& .shadow {
 				position: absolute; /* Para sobrepor à caixa */
 				top: 5px;
@@ -1013,30 +1060,29 @@ main {
 			}
 		}
 	}
-	
+
 	& .galeria {
-	
 		& .galeria-header {
 			display: flex;
 			justify-content: space-between;
-	
+
 			& .title {
 				font-family: "Suez One";
 				position: relative;
-	
+
 				& > p {
 					font-size: 25rem;
 					line-height: 50px;
 					color: rgba(38, 72, 22, 1);
 					margin: 0;
 				}
-	
+
 				& .title-text {
 					position: absolute;
 					color: white;
 					top: 15px;
 					left: 100px;
-	
+
 					& h3 {
 						font-size: 3.5rem;
 						display: flex;
@@ -1044,7 +1090,7 @@ main {
 						margin: 0;
 						gap: 15px;
 					}
-	
+
 					& h1 {
 						font-size: 6.5rem;
 						line-height: 50px;
@@ -1055,49 +1101,49 @@ main {
 					}
 				}
 			}
-	
+
 			& .rede-social {
 				display: flex;
 				font-family: "Suez One";
 				color: white;
 				align-items: center;
-	
+
 				& p {
 					font-size: 8rem;
 					color: var(--green-dark);
 					margin: 0;
 					margin-bottom: 10px;
 				}
-	
+
 				& h5 {
 					font-size: 2.5rem;
 					margin: 0;
 				}
 			}
 		}
-	
+
 		& .galeria-content {
 			display: grid;
-	
+
 			width: 100%;
-	
+
 			grid-template: 257px 257px 257px / 150px 150px 150px 150px 150px 150px;
-	
+
 			gap: 10px;
-	
+
 			margin: 50px auto 0 auto;
 			justify-content: center;
-	
+
 			& .item {
 				position: relative;
-	
+
 				& img {
 					width: 100%;
 					height: 100%;
 					position: absolute;
 				}
 			}
-	
+
 			& .item::after {
 				content: "";
 				position: absolute;
@@ -1109,7 +1155,7 @@ main {
 				border-right: 4px solid var(--green-dark);
 				z-index: 50;
 			}
-	
+
 			& .item::before {
 				content: "";
 				position: absolute;
@@ -1121,7 +1167,7 @@ main {
 				border-bottom: 4px solid var(--green-dark);
 				z-index: 50;
 			}
-	
+
 			& .item-1 {
 				grid-column-start: 1;
 				grid-column-end: 4;
@@ -1150,7 +1196,7 @@ main {
 			}
 		}
 	}
-	
+
 	& .feedback {
 		height: 400px;
 		background-color: rgba(15, 42, 57, 0.3);
@@ -1158,12 +1204,12 @@ main {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	
+
 		& .container-feed {
 			width: 90%;
 			height: 80%;
 			overflow: auto;
-	
+
 			& .feeds {
 				width: 200%;
 				height: 100%;
@@ -1173,27 +1219,27 @@ main {
 				margin: 0 10px;
 				gap: 30px;
 			}
-	
+
 			& .feed-item {
 				width: 214.48px;
 				height: 200px;
 				background-color: var(--blue-dark);
 				border-radius: 100px 0 100px 0;
-	
+
 				& img {
 					border: 4px solid var(--green-dark);
 					border-radius: 100%;
 				}
-	
+
 				& .content-feed {
 					font-family: "Rozha One", serif;
-	
+
 					& h1 {
 						color: var(--green-dark);
 						font-size: 2rem;
 						text-align: center;
 					}
-	
+
 					& p {
 						color: white;
 						font-size: 1.2rem;
@@ -1204,23 +1250,23 @@ main {
 				}
 			}
 		}
-	
+
 		& .container-feed::-webkit-scrollbar {
 			width: 10px;
 			height: 10px;
 		}
-	
+
 		.container-feed::-webkit-scrollbar-track {
 			background: black;
 			border-radius: 10px; /* color of the tracking area */
 		}
-	
+
 		.container-feed::-webkit-scrollbar-thumb {
 			background-color: var(--green-dark); /* color of the scroll thumb */
 			border-radius: 20px; /* roundness of the scroll thumb */
 		}
 	}
-	
+
 	& .apresentacao {
 		height: 500px;
 		background-image: url(../imgs/apresentacao/img1.png);
@@ -1231,7 +1277,7 @@ main {
 		align-items: center;
 		font-family: "Rozha One", serif;
 		border-radius: 30px;
-	
+
 		& .container-apresentacao {
 			& h1:nth-child(1) {
 				font-size: 5rem;
@@ -1243,7 +1289,7 @@ main {
 					-webkit-text-stroke: 1px white; /* Contorno branco */
 				}
 			}
-	
+
 			& h1:nth-child(2) {
 				font-size: 5rem;
 				color: white;
@@ -1254,7 +1300,6 @@ main {
 			}
 		}
 	}
-
 }
 
 footer {

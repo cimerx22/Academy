@@ -124,5 +124,21 @@ feeds.style.width = `${valorTotal(itemsFeed, 245)}px`
 
 
 
+// hover animação
+
+let box = document.querySelectorAll(".item-treinadores");
+
+
+// box.forEach((elemento)=>{
+// 	elemento.addEventListener("mouseenter",(tar)=>{
+// 		// tar.target.children[2].style.cssText = `bottom: 0;`;
+// 		tar.target.children[2].classList.toggle("hover-animation");
+// 	})
+// 	elemento.addEventListener("mouseleave", (tar)=>{
+// 		// tar.target.children[2].style.cssText = `/* bottom: 0px; */`;
+// 		tar.target.children[2].classList.toggle("hover-animation");
+// 	})
+// })
+
 
 
