@@ -39,38 +39,38 @@
 // 			if (elemento.classList.toggle("actives", true)) {
 // 				switch (elemento.dataset.nome) {
 // 					case "musc":
-	
+
 // 						img_planos[0].classList.toggle("img-active", true);
 // 						indexPlanos = 0;
 // 						break;
-	
+
 // 					case "cros":
 // 						img_planos[1].classList.toggle("img-active", true);
 // 						indexPlanos = 1;
 // 						break;
-	
+
 // 					case "boxe":
 // 						img_planos[2].classList.toggle("img-active", true);
 // 						indexPlanos = 2;
 // 						break;
-	
+
 // 					case "dance":
 // 						img_planos[3].classList.toggle("img-active", true);
 // 						indexPlanos = 3;
 // 						break;
-	
+
 // 					default:
 // 						console.log("algum erro");
 // 						break;
 // 				}
-	
+
 // 				valores_planos.forEach((valoresEl, ind)=>{
 // 					valoresEl.classList.remove("vLeft");
 // 					valorPreco = precos[indexPlanos][ind];
 
 // 					valoresEl.innerText = valorPreco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-// 				}) 
-				
+// 				})
+
 // 			}
 
 // 			click = false;
@@ -80,17 +80,12 @@
 // 	});
 // });
 
-
-
-
 // // Equipe
-
 
 // let prev = document.querySelector(".icon-prev-next i:nth-child(1)")
 // let next = document.querySelector(".icon-prev-next i:nth-child(2)")
 // let scrollTreinador = document.querySelector(".treinadores-content")
 // let itemTreinador = document.querySelectorAll(".treinadores-content .container-content .box")
-
 
 // function valorTotal(arr, valorWidth){
 
@@ -112,9 +107,6 @@
 // 	scrollTreinador.scrollLeft += 400;
 // })
 
-
-
-
 // let feeds = document.querySelector(".feeds");
 // let itemsFeed = document.querySelectorAll(".feed-item");
 // let containerTreinador = document.querySelector(".treinadores-content .container-content")
@@ -122,34 +114,33 @@
 // containerTreinador.style.width = `${valorTotal(itemTreinador, 200)}px`;
 // feeds.style.width = `${valorTotal(itemsFeed, 245)}px`
 
-
-
 // button menu animação
 
+let menu = document.querySelectorAll(".button-menu");
+let menuMobile = document.querySelector(".menu-mobile");
 
-let menu = document.querySelector(".button-menu");
+console.log(menuMobile);
 
 console.log(menu);
 
-menu.addEventListener("click", ()=>{
+menu.forEach((el) => {
+	console.log(el);
+	el.addEventListener("click", () => {
 
-	menu.classList.toggle("active-button")
-
-	let  controleMenu = menu.classList.contains("active-button");
-
-	if(controleMenu){
 		
-	}else{
+		console.log(el);
 		
-	}
+		el.classList.toggle("active-button");
 
 
-	
+		let controleMenu = el.classList.contains("active-button");
 
-	
-
-
-	
-
-})
-
+		
+		if (controleMenu) {
+			menuMobile.style.transform = "translateX(0)";	
+			console.log("ativo");
+		} else {
+			menuMobile.style.transform = "translateX(100%)";
+		}
+	});
+});
