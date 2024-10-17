@@ -131,8 +131,6 @@ main {
 	position: relative;
 	width: 100%;
 
-height: 100%;
-
 	& .menu {
 		height: 80px;
 		max-width: 900px;
@@ -1467,7 +1465,7 @@ footer {
 		margin-top: 0;
 		width: 100%;
 		height: auto;
-		overflow: hidden;
+		/* overflow: hidden; */
 		z-index: 1;
 
 		& .menu {
@@ -1843,6 +1841,83 @@ footer {
 			}
 		}
 
+		& .cta {
+			height: 547px;
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+			align-items: center;
+			background-image: url(../imgs/background\ cta.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+	
+			& .cta-content {
+
+				width: 40%;
+
+				& .cta-title {
+					color: white;
+					display: flex;
+					flex-direction: column;
+					width: 280px;
+	
+					& h1 {
+						font-size: 5rem;
+						font-family: "Saira Stencil One", sans-serif;
+						text-shadow: 20px 5px 30px var(--green-dark);
+						width: auto;
+						height: auto;
+						margin: 0;
+						transform: rotate(-0.5deg);
+					}
+	
+					& h3 {
+						font-size: 2rem;
+						font-family: "Saira Stencil One", sans-serif;
+						width: auto;
+						height: auto;
+						margin: 0;
+						align-self: end;
+					}
+	
+					& span {
+						color: var(--green-dark);
+					}
+				}
+	
+				& p {
+					color: white;
+					font-size: 1.3rem;
+					margin: 20px 0;
+					width: 400px;
+					font-family: "Suez One", serif;
+					font-weight: normal;
+				}
+	
+				& .cta-button {
+					padding: 20px 5px;
+					font-family: "Suez One", serif;
+					font-size: 2rem;
+					background-color: transparent;
+					color: white;
+					border: solid 2px var(--green-dark);
+					border-radius: 50px;
+					margin: 0 0 0 40px;
+				}
+			}
+	
+			& .cta-img {
+				
+				width: 40%;
+				height: 440px;
+				background-color: #74cf21;
+				& img {
+					width: 130px;
+					height: 177px;
+				}
+			}
+		}
 
 
 	}
