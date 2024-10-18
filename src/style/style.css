@@ -2518,6 +2518,159 @@ footer {
 				}
 			}
 		}
+
+		& .galeria {
+			& .galeria-header {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+	
+				& .title {
+					font-family: "Suez One";
+					position: relative;
+					left: 20px;
+	
+					& > p {
+						font-size: 12rem;
+						line-height: 50px;
+						color: rgba(38, 72, 22, 1);
+						margin: 0;
+					}
+	
+					& .title-text {
+						position: absolute;
+						color: white;
+						top: 15px;
+						left: 40px;
+	
+						& h3 {
+							font-size: 2rem;
+							display: flex;
+							align-items: center;
+							margin: 0;
+							gap: 15px;
+						}
+	
+						& h1 {
+							font-size: 3rem;
+							line-height: 50px;
+							padding-left: 20px;
+							& span {
+								color: var(--green-dark);
+							}
+						}
+					}
+				}
+	
+				& .rede-social {
+					display: flex;
+					font-family: "Suez One";
+					color: white;
+					align-items: center;
+	
+					& p {
+						font-size: 8rem;
+						color: var(--green-dark);
+						margin: 0;
+						margin-bottom: 10px;
+					}
+	
+					& h5 {
+						font-size: 2.5rem;
+						margin: 0;
+					}
+				}
+			}
+	
+			& .galeria-content {
+				display: grid;
+				width: 100%;
+	
+				grid-template: 130px 130px / auto auto auto;
+
+				grid-template-areas:
+				
+					"imagem1 imagem1 imagem3"
+					"imagem2 imagem2 imagem3"
+
+
+				;
+	
+				gap: 10px;
+	
+				margin: 0 auto 0 auto;
+				justify-content: center;
+	
+				& .item {
+					position: relative;
+	
+					& img {
+						/* width: 100%;
+						height: 100%; */
+						position: static;
+					}
+				}
+	
+				& .item::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 50px;
+					height: 50px;
+					border-top: 4px solid var(--green-dark);
+					border-right: 4px solid var(--green-dark);
+					z-index: 50;
+				}
+	
+				& .item::before {
+					content: "";
+					position: absolute;
+					width: 50px;
+					height: 50px;
+					bottom: 0;
+					left: 0;
+					border-left: 4px solid var(--green-dark);
+					border-bottom: 4px solid var(--green-dark);
+					z-index: 50;
+				}
+	
+				& .item-1 {
+					/* grid-column-start: 1;
+					grid-column-end: 2;
+					position: relative; */
+
+					grid-area: imagem1;
+				}
+				& .item-2 {
+					/* grid-column-start: 2;
+					grid-column-end: 3; */
+					grid-area: imagem2;
+				}
+				& .item-3 {
+					/* grid-column-start: 2;
+					grid-column-end: 3;
+					grid-row-start: 1;
+					grid-row-end: 3; */
+					grid-area: imagem3;
+				}
+				& .item-4 {
+					/* grid-column-start: 3;
+					grid-column-end: 7; */
+					display: none;
+				}
+				& .item-5 {
+					/* grid-column-start: 3;
+					grid-column-end: 5; */
+					display: none;
+				}
+				& .item-6 {
+					/* grid-column-start: 5;
+					grid-column-end: 7; */
+					display: none;
+				}
+			}
+		}
 	}
 
 
