@@ -130,6 +130,7 @@ main {
 	margin-top: 30px;
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 
 	& .menu {
 		height: 80px;
@@ -464,7 +465,7 @@ main {
 
 			& p {
 				color: white;
-				font-size: 1.3rem;
+				font-size: 1rem;
 				margin: 20px 0;
 				width: 400px;
 				font-family: "Suez One", serif;
@@ -1394,6 +1395,12 @@ footer {
 @media (max-width: 450px) {
 
 
+	/* .section-padrao {
+		max-width: 1200px;
+		margin: 50px auto 0 auto;
+	} */
+
+
 	header {
 
 	
@@ -1842,7 +1849,7 @@ footer {
 		}
 
 		& .cta {
-			height: 547px;
+			height: auto;
 			display: flex;
 			width: 100%;
 			justify-content: space-around;
@@ -1860,7 +1867,7 @@ footer {
 					color: white;
 					display: flex;
 					flex-direction: column;
-					width: 280px;
+					width: 170px;
 	
 					& h1 {
 						font-size: 5rem;
@@ -1890,31 +1897,33 @@ footer {
 					color: white;
 					font-size: 1.3rem;
 					margin: 20px 0;
-					width: 400px;
+					width: 220px;
 					font-family: "Suez One", serif;
 					font-weight: normal;
 				}
 	
 				& .cta-button {
-					padding: 20px 5px;
+					padding: 10px 10px;
 					font-family: "Suez One", serif;
-					font-size: 2rem;
+					font-size: 1.5rem;
 					background-color: transparent;
 					color: white;
 					border: solid 2px var(--green-dark);
 					border-radius: 50px;
-					margin: 0 0 0 40px;
+					margin: 0 0 0 0;
 				}
 			}
 	
 			& .cta-img {
 				
 				width: 40%;
-				height: 440px;
-				background-color: #74cf21;
+				height: 200px;
+				text-align: center;
+
 				& img {
-					width: 130px;
-					height: 177px;
+					width: 150px;
+					height: 200px;
+					
 				}
 			}
 		}
