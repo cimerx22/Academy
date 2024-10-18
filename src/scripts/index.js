@@ -60,7 +60,7 @@ lista.forEach(function (elemento) {
 						break;
 
 					default:
-						console.log("algum erro");
+						
 						break;
 				}
 
@@ -87,12 +87,13 @@ let next = document.querySelector(".icon-prev-next i:nth-child(2)")
 let scrollTreinador = document.querySelector(".treinadores-content")
 let itemTreinador = document.querySelectorAll(".treinadores-content .container-content .box")
 
-function valorTotal(arr, valorWidth){
+function valorTotal(arr){
 
 	let valor = 0;
-
-	arr.forEach(()=>{
-		valor += valorWidth;
+	
+	arr.forEach((el)=>{
+		console.log((getComputedStyle(el).width));
+		valor += Number(getComputedStyle(el).width);
 	})
 
 	return valor;
@@ -111,24 +112,33 @@ let feeds = document.querySelector(".feeds");
 let itemsFeed = document.querySelectorAll(".feed-item");
 let containerTreinador = document.querySelector(".treinadores-content .container-content")
 
-containerTreinador.style.width = `${valorTotal(itemTreinador, 200)}px`;
-feeds.style.width = `${valorTotal(itemsFeed, 245)}px`
+
+
+let body = document.querySelector("body")
+
+body.onload = function(){
+	console.log("carregado");
+	console.log(getComputedStyle(itemsFeed[0]).width);
+	containerTreinador.style.width = `${valorTotal(itemTreinador)}px`;
+	feeds.style.width = `${valorTotal(itemsFeed)}px`
+}
+
+
+
 
 // button menu animação
 
 let menu = document.querySelectorAll(".button-menu");
 let menuMobile = document.querySelector(".menu-mobile");
 
-console.log(menuMobile);
 
-console.log(menu);
 
 menu.forEach((el) => {
-	console.log(el);
+	
 	el.addEventListener("click", () => {
 
 		
-		console.log(el);
+		
 		
 		el.classList.toggle("active-button");
 
@@ -138,7 +148,7 @@ menu.forEach((el) => {
 		
 		if (controleMenu) {
 			menuMobile.style.transform = "translateX(0)";	
-			console.log("ativo");
+			
 		} else {
 			menuMobile.style.transform = "translateX(100%)";
 		}
