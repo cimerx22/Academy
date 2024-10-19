@@ -2851,7 +2851,7 @@ footer {
 		}
 
 		& .bx3 {
-			padding-bottom: 30px;
+			padding-bottom: 0;
 			width: 100%;
 			& iframe {
 				width: 100%;
