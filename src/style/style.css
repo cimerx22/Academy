@@ -2776,7 +2776,7 @@ footer {
 			
 
 			& .bx-ctn-redes {
-
+				/* background-color: #ff00cf; */
 				width: 50%;
 
 				& p {
@@ -2792,14 +2792,14 @@ footer {
 					gap: 20px;
 
 					& i {
-						font-size: 35.1px;
+						font-size: 30.1px;
 						color: white;
 					}
 
 					& i:nth-child(1) {
 					}
 					& i:nth-child(2) {
-						font-size: 37.1px;
+						font-size: 32.1px;
 					}
 				}
 			}
