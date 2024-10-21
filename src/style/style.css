@@ -2107,46 +2107,86 @@ footer {
 				}
 			}
 
-			& .nav-items-planos {
-				margin: 70px 0;
-
-				& ul {
-					list-style: none;
-					display: flex;
-					gap: 40px;
-					justify-content: center;
-					padding: 20px 1px;
-					background-color: rgba(15, 42, 57, 0.3);
-					width: 80%;
-					margin: auto;
-					border-radius: 20px;
-					& li {
-						font-family: "Poppins";
-						width: 150px;
-						text-align: center;
-						font-size: 2rem;
-						font-weight: 400;
-						border-radius: 30px;
-						padding: 10px 4px;
-						background-color: transparent;
-						color: white;
-						cursor: pointer;
-					}
-
-					.actives {
-						background-color: var(--green-dark);
-						color: black;
-						transition: all 1s;
-					}
-				}
-			}
 
 			& .planos-conteudo {
 				display: flex;
-				justify-content: space-around;
-
-				
-
+				justify-content: space-evenly;
+				margin: 100px 0 0 0 ;
+				color: white;
+				font-family: "Poppins";
+				align-items: center;
+				flex-direction: column;
+				gap: 50px;
+	
+				& .plano-item{
+					width: 90%;
+					height: auto;
+					border: 1px solid var(--green-dark);
+					background-color: transparent;
+					position: relative;
+	
+					& .container-item{
+	
+						width: 90%;
+						margin: auto;
+	
+	
+						& h1{
+							width: 30%;
+							font-size: 2rem;
+							position: relative;
+							line-height: 10px;
+							bottom: 20px;
+							left: 15px;
+							background-color: var(--green-dark);
+							border-radius: 10px 0 10px 0;
+							padding: 10px 10px;
+							display: inline-block;
+							text-align: center;
+							color: black;
+							font-family: "Suez One";
+							
+						}
+	
+						& > p{
+							
+							font-size: 1.7rem;
+							margin-bottom: 20px;
+						}
+	
+						& .valores-item{
+							font-size: 1.2rem;
+	
+							& > :nth-child(2){
+								font-size: 3rem;
+							}
+						}
+	
+						& ul{
+							list-style: none;
+							padding: 0;
+							display: flex;
+							flex-direction: column;
+							gap: 5px;
+							padding: 20px 0;
+	
+							& li{
+								font-size: 1.4rem;
+								display: flex;
+								align-items: center;
+								gap: 10px;
+							}
+	
+							& li::before{
+								content: url(../imgs/planos/check.png);
+								width: 35px;
+								height: 35px;
+							}
+	
+						}
+					}
+					
+				}
 			}
 		}
 
