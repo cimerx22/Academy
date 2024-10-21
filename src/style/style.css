@@ -2551,7 +2551,6 @@ footer {
 			& .galeria-content {
 				display: grid;
 				width: 80%;
-				background-color: var(--green-light);
 
 				grid-template: auto auto / auto auto auto;
 
