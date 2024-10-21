@@ -2086,26 +2086,26 @@ footer {
 					& > #custom-text {
 						position: relative;
 						font-family: "suez one";
-						font-size: 25rem;
+						font-size: 20rem;
 						color: rgba(38, 72, 22, 1);
 						top: 30px;
 					}
 
 					& > p:nth-child(2) {
 						position: relative;
-						left: 120px;
+						left: 85px;
 						bottom: 20px;
 						z-index: 2;
 						color: var(--green-dark);
 						display: inline-block;
-						font-size: 4rem;
+						font-size: 3.3rem;
 					}
 				}
 
 				& > p {
-					font-size: 4rem;
+					font-size: 3.5em;
 					position: relative;
-					left: 140px;
+					left: 100px;
 					line-height: 40%;
 				}
 			}
@@ -3500,26 +3500,26 @@ footer {
 					& > #custom-text {
 						position: relative;
 						font-family: "suez one";
-						font-size: 25rem;
+						font-size: 20rem;
 						color: rgba(38, 72, 22, 1);
 						top: 30px;
 					}
 
 					& > p:nth-child(2) {
 						position: relative;
-						left: 120px;
+						left: 60px;
 						bottom: 20px;
 						z-index: 2;
 						color: var(--green-dark);
 						display: inline-block;
-						font-size: 4rem;
+						font-size: 2.5rem;
 					}
 				}
 
 				& > p {
-					font-size: 4rem;
+					font-size: 2.9em;
 					position: relative;
-					left: 140px;
+					left: 70px;
 					line-height: 40%;
 				}
 			}
