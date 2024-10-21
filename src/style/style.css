@@ -1842,26 +1842,26 @@ footer {
 
 					& span:nth-child(1) {
 						color: var(--green-light);
-						font-size: 3rem;
+						font-size: 4rem;
 					}
 
 					& span:nth-child(2) {
 						color: black;
-						font-size: 2rem;
+						font-size: 3rem;
 						text-shadow: -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white,
 							1px 0 0 white;
 					}
 				}
 
 				& img {
-					width: 30px;
-					height: 30px;
+					width: 40px;
+					height: 40px;
 				}
 			}
 
 			& .carousel-inner {
-				width: 300px;
-				height: 150px;
+				width: 70%;
+				height: auto;
 				margin: auto;
 				background-color: transparent;
 
@@ -1980,22 +1980,23 @@ footer {
 				& .services-title {
 					& p {
 						font-family: "poppins";
+
 					}
 
 					& p:nth-child(1) {
-						font-size: 1.5rem;
+						font-size: 2rem;
 						margin: 0;
 					}
 
 					& p:nth-child(2) {
-						font-size: 2.5rem;
+						font-size: 3rem;
 						color: var(--green-light);
 						font-weight: bold;
 					}
 				}
 
 				& > p {
-					font-size: 1rem;
+					font-size: 1.5rem;
 					font-family: "poppins";
 				}
 			}
@@ -2035,14 +2036,15 @@ footer {
 						justify-content: center;
 						align-items: center;
 						max-width: 70%;
+						gap: 10px;
 
 						& h4 {
-							font-size: 1.8rem;
+							font-size: 2rem;
 							font-family: "poppins";
 						}
 
 						& p {
-							font-size: 1rem;
+							font-size: 1.3rem;
 							font-family: "poppins";
 							text-align: left;
 						}
@@ -2507,7 +2509,7 @@ footer {
 						left: 40px;
 
 						& h3 {
-							font-size: 2rem;
+							font-size: 3rem;
 							display: flex;
 							align-items: center;
 							margin: 0;
@@ -2515,8 +2517,8 @@ footer {
 						}
 
 						& h1 {
-							font-size: 3rem;
-							line-height: 50px;
+							font-size: 4rem;
+							line-height: 40px;
 							padding-left: 20px;
 							& span {
 								color: var(--green-dark);
@@ -2526,6 +2528,7 @@ footer {
 				}
 
 				& .rede-social {
+					margin-top: 20px;
 					display: flex;
 					font-family: "Suez One";
 					color: white;
@@ -2547,9 +2550,10 @@ footer {
 
 			& .galeria-content {
 				display: grid;
-				width: 100%;
+				width: 80%;
+				background-color: var(--green-light);
 
-				grid-template: 130px 130px / auto auto auto;
+				grid-template: auto auto / auto auto auto;
 
 				grid-template-areas:
 					"imagem1 imagem1 imagem3"
@@ -2656,13 +2660,13 @@ footer {
 				}
 
 				& .feed-item {
-					width: 150px;
+					width: 500px;
 					height: 140px;
 					background-color: var(--blue-dark);
 					border-radius: 100px 0 100px 0;
 
 					& img {
-						width: 40px;
+						width: 50px;
 						border: 4px solid var(--green-dark);
 						border-radius: 100%;
 					}
@@ -2672,15 +2676,15 @@ footer {
 
 						& h1 {
 							color: var(--green-dark);
-							font-size: 1.2rem;
+							font-size: 1.5rem;
 							text-align: center;
 						}
 
 						& p {
 							color: white;
-							font-size: 0.6rem;
+							font-size: 1rem;
 							text-align: justify;
-							width: 70%;
+							width: 80%;
 							margin: auto;
 						}
 					}
@@ -2704,7 +2708,7 @@ footer {
 		}
 
 		& .apresentacao {
-			height: 226px;
+			height: 300px;
 			background-image: url(../imgs/mobile/apresentacao/mobile-apren.png);
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -2759,7 +2763,7 @@ footer {
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
-			padding: 30px 10px 0 10px;
+			padding: 50px 10px 0 10px;
 			background-image: url(../imgs/mobile/footer/Vector\ 37.png);
 			background-size: cover;
 
