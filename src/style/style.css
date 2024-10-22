@@ -328,25 +328,25 @@ main {
 							cursor: pointer;
 							overflow: hidden;
 							transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-						  }
-						  
-						  .animated-button svg {
+						}
+
+						.animated-button svg {
 							position: absolute;
 							width: 24px;
 							fill: greenyellow;
 							z-index: 9;
 							transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-						  }
-						  
-						  .animated-button .arr-1 {
+						}
+
+						.animated-button .arr-1 {
 							right: 16px;
-						  }
-						  
-						  .animated-button .arr-2 {
+						}
+
+						.animated-button .arr-2 {
 							left: -25%;
-						  }
-						  
-						  .animated-button .circle {
+						}
+
+						.animated-button .circle {
 							position: absolute;
 							top: 50%;
 							left: 50%;
@@ -357,47 +357,47 @@ main {
 							border-radius: 50%;
 							opacity: 0;
 							transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-						  }
-						  
-						  .animated-button .text {
+						}
+
+						.animated-button .text {
 							position: relative;
 							z-index: 1;
 							transform: translateX(-12px);
 							transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-						  }
-						  
-						  .animated-button:hover {
+						}
+
+						.animated-button:hover {
 							box-shadow: 0 0 0 12px transparent;
 							color: #212121;
 							border-radius: 12px;
-						  }
-						  
-						  .animated-button:hover .arr-1 {
+						}
+
+						.animated-button:hover .arr-1 {
 							right: -15%;
-						  }
-						  
-						  .animated-button:hover .arr-2 {
+						}
+
+						.animated-button:hover .arr-2 {
 							left: 16px;
-						  }
-						  
-						  .animated-button:hover .text {
+						}
+
+						.animated-button:hover .text {
 							transform: translateX(12px);
-						  }
-						  
-						  .animated-button:hover svg {
+						}
+
+						.animated-button:hover svg {
 							fill: #212121;
-						  }
-						  
-						  .animated-button:active {
+						}
+
+						.animated-button:active {
 							scale: 0.95;
 							box-shadow: 0 0 0 4px greenyellow;
-						  }
-						  
-						  .animated-button:hover .circle {
+						}
+
+						.animated-button:hover .circle {
 							width: 220px;
 							height: 220px;
 							opacity: 1;
-						  }
+						}
 					}
 				}
 			}
@@ -751,24 +751,22 @@ main {
 		& .planos-conteudo {
 			display: flex;
 			justify-content: space-evenly;
-			margin: 100px 0 0 0 ;
+			margin: 100px 0 0 0;
 			color: white;
 			font-family: "Poppins";
 
-			& .plano-item{
+			& .plano-item {
 				width: 31%;
 				height: auto;
 				border: 1px solid var(--green-dark);
 				background-color: transparent;
 				position: relative;
 
-				& .container-item{
-
+				& .container-item {
 					width: 90%;
 					margin: auto;
 
-
-					& h1{
+					& h1 {
 						width: 30%;
 						font-size: 2rem;
 						position: relative;
@@ -782,24 +780,22 @@ main {
 						text-align: center;
 						color: black;
 						font-family: "Suez One";
-						
 					}
 
-					& > p{
-						
+					& > p {
 						font-size: 1.7rem;
 						margin-bottom: 20px;
 					}
 
-					& .valores-item{
+					& .valores-item {
 						font-size: 1.2rem;
 
-						& > :nth-child(2){
+						& > :nth-child(2) {
 							font-size: 3rem;
 						}
 					}
 
-					& ul{
+					& ul {
 						list-style: none;
 						padding: 0;
 						display: flex;
@@ -807,22 +803,20 @@ main {
 						gap: 5px;
 						padding: 20px 0;
 
-						& li{
+						& li {
 							font-size: 1.4rem;
 							display: flex;
 							align-items: center;
 							gap: 10px;
 						}
 
-						& li::before{
+						& li::before {
 							content: url(../imgs/planos/check.png);
 							width: 35px;
 							height: 35px;
 						}
-
 					}
 				}
-				
 			}
 		}
 	}
@@ -831,88 +825,74 @@ main {
 		height: auto;
 
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 
 		& .fit-content {
-			& .fit-title {
-				position: relative;
 
-				& img {
-					width: 136.25px;
-					height: 125.64px;
+
+			display: flex;
+			justify-content: space-between;
+			
+
+			& .container-title {
+
+
+
+				& .fit-title {
+					position: relative;
+
+					& img {
+						width: 136.25px;
+						height: 125.64px;
+					}
+
+					& h1 {
+						font-family: "DM Sans", sans-serif;
+						font-size: 7rem;
+						color: var(--green-dark);
+						font-weight: bold;
+
+						top: 10px;
+						left: 70px;
+
+						& span {
+							color: white;
+						}
+					}
+
+					
 				}
 
-				& h1 {
-					font-family: "DM Sans", sans-serif;
-					font-size: 7rem;
-					color: var(--green-dark);
-					font-weight: bold;
-					text-shadow: 20px 5px 30px var(--green-dark);
-					position: absolute;
-					top: 10px;
-					left: 70px;
+				& > p {
+					font-family: "poppins";
+					font-size: 2rem;
+					width: 500.36px;
+					color: white;
 
-					& span {
-						color: white;
-					}
+					margin: 30px 0;
+					position: relative;
+					left: 70px;
 				}
 			}
 
-			& > p {
-				font-family: "poppins";
-				font-size: 2rem;
-				width: 500.36px;
-				color: white;
+			& .fix-prev {
+				align-self: end;
+				font-size: 30px;
+				& i {
+					color: var(--green-dark);
+				}
 
-				margin: 30px 0;
+				& i:nth-child(1) {
+				}
+
+				& i:nth-child(2) {
+					transform: rotateY(180deg);
+				}
 			}
 		}
 
-		& .content-img {
-			display: flex;
-			gap: 10px;
-
-			& .bx-content {
-				width: 230.25px;
-				height: 130px;
-				background-color: var(--blue-light);
-
-				& h2 {
-					color: white;
-					font-family: "poppins";
-					font-size: 2.5rem;
-					text-align: center;
-					padding-top: 5px;
-				}
-
-				& p {
-					color: white;
-					font-family: "poppins";
-					font-size: 1.5rem;
-					max-width: 90%;
-					margin: auto;
-				}
-			}
-
-			& .bx-1 {
-				display: flex;
-				flex-direction: column;
-				gap: 10px;
-
-				& .bx-content {
-					box-shadow: -10px 10px 0 var(--green-dark);
-				}
-			}
-
-			& .bx-2 {
-				display: flex;
-				flex-direction: column-reverse;
-				gap: 10px;
-
-				& .bx-content {
-					box-shadow: 10px -10px 0 var(--green-dark);
-				}
-			}
+		& .container-campeoes {
 		}
 	}
 
@@ -1980,7 +1960,6 @@ footer {
 				& .services-title {
 					& p {
 						font-family: "poppins";
-
 					}
 
 					& p:nth-child(1) {
@@ -2110,31 +2089,28 @@ footer {
 				}
 			}
 
-
 			& .planos-conteudo {
 				display: flex;
 				justify-content: space-evenly;
-				margin: 100px 0 0 0 ;
+				margin: 100px 0 0 0;
 				color: white;
 				font-family: "Poppins";
 				align-items: center;
 				flex-direction: column;
 				gap: 50px;
-	
-				& .plano-item{
+
+				& .plano-item {
 					width: 90%;
 					height: auto;
 					border: 1px solid var(--green-dark);
 					background-color: transparent;
 					position: relative;
-	
-					& .container-item{
-	
+
+					& .container-item {
 						width: 90%;
 						margin: auto;
-	
-	
-						& h1{
+
+						& h1 {
 							width: 30%;
 							font-size: 2rem;
 							position: relative;
@@ -2148,47 +2124,43 @@ footer {
 							text-align: center;
 							color: black;
 							font-family: "Suez One";
-							
 						}
-	
-						& > p{
-							
+
+						& > p {
 							font-size: 1.7rem;
 							margin-bottom: 20px;
 						}
-	
-						& .valores-item{
+
+						& .valores-item {
 							font-size: 1.2rem;
-	
-							& > :nth-child(2){
+
+							& > :nth-child(2) {
 								font-size: 3rem;
 							}
 						}
-	
-						& ul{
+
+						& ul {
 							list-style: none;
 							padding: 0;
 							display: flex;
 							flex-direction: column;
 							gap: 5px;
 							padding: 20px 0;
-	
-							& li{
+
+							& li {
 								font-size: 1.4rem;
 								display: flex;
 								align-items: center;
 								gap: 10px;
 							}
-	
-							& li::before{
+
+							& li::before {
 								content: url(../imgs/planos/check.png);
 								width: 35px;
 								height: 35px;
 							}
-	
 						}
 					}
-					
 				}
 			}
 		}
@@ -2746,7 +2718,7 @@ footer {
 		max-width: var(--width-padrao);
 		margin: 0 auto 0 auto;
 		height: auto;
-		background-image: url('');
+		background-image: url("");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: flex;
@@ -2765,8 +2737,6 @@ footer {
 			padding: 50px 10px 0 10px;
 			background-image: url(../imgs/mobile/footer/Vector\ 37.png);
 			background-size: cover;
-
-			
 
 			& .bx-ctn-redes {
 				/* background-color: #ff00cf; */
@@ -2799,7 +2769,6 @@ footer {
 		}
 
 		& .bx-ctn-ctt {
-
 			width: 50%;
 
 			& ul {
@@ -2821,13 +2790,12 @@ footer {
 					gap: 10px;
 
 					& i {
-
 						width: 30px;
 						font-size: 2rem;
 						line-height: 55px;
 					}
 
-					& > p{
+					& > p {
 						font-size: 1.5rem;
 					}
 				}
@@ -3523,31 +3491,28 @@ footer {
 				}
 			}
 
-
 			& .planos-conteudo {
 				display: flex;
 				justify-content: space-evenly;
-				margin: 100px 0 0 0 ;
+				margin: 100px 0 0 0;
 				color: white;
 				font-family: "Poppins";
 				align-items: center;
 				flex-direction: column;
 				gap: 50px;
-	
-				& .plano-item{
+
+				& .plano-item {
 					width: 90%;
 					height: auto;
 					border: 1px solid var(--green-dark);
 					background-color: transparent;
 					position: relative;
-	
-					& .container-item{
-	
+
+					& .container-item {
 						width: 90%;
 						margin: auto;
-	
-	
-						& h1{
+
+						& h1 {
 							width: 30%;
 							font-size: 2rem;
 							position: relative;
@@ -3561,47 +3526,43 @@ footer {
 							text-align: center;
 							color: black;
 							font-family: "Suez One";
-							
 						}
-	
-						& > p{
-							
+
+						& > p {
 							font-size: 1.7rem;
 							margin-bottom: 20px;
 						}
-	
-						& .valores-item{
+
+						& .valores-item {
 							font-size: 1.2rem;
-	
-							& > :nth-child(2){
+
+							& > :nth-child(2) {
 								font-size: 3rem;
 							}
 						}
-	
-						& ul{
+
+						& ul {
 							list-style: none;
 							padding: 0;
 							display: flex;
 							flex-direction: column;
 							gap: 5px;
 							padding: 20px 0;
-	
-							& li{
+
+							& li {
 								font-size: 1.4rem;
 								display: flex;
 								align-items: center;
 								gap: 10px;
 							}
-	
-							& li::before{
+
+							& li::before {
 								content: url(../imgs/planos/check.png);
 								width: 35px;
 								height: 35px;
 							}
-	
 						}
 					}
-					
 				}
 			}
 		}
@@ -4158,7 +4119,7 @@ footer {
 		max-width: var(--width-padrao);
 		margin: 0 auto 0 auto;
 		height: auto;
-		background-image: url('');
+		background-image: url("");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: flex;
@@ -4177,8 +4138,6 @@ footer {
 			padding: 30px 10px 0 10px;
 			background-image: url(../imgs/mobile/footer/Vector\ 37.png);
 			background-size: cover;
-
-			
 
 			& .bx-ctn-redes {
 				/* background-color: #ff00cf; */
@@ -4211,7 +4170,6 @@ footer {
 		}
 
 		& .bx-ctn-ctt {
-
 			width: 50%;
 
 			& ul {
@@ -4233,13 +4191,12 @@ footer {
 					gap: 10px;
 
 					& i {
-
 						width: 30px;
 						font-size: 2rem;
 						line-height: 55px;
 					}
 
-					& > p{
+					& > p {
 						font-size: 1.5rem;
 					}
 				}
@@ -4265,8 +4222,6 @@ footer {
 		}
 	}
 }
-
-
 
 /* @media (min-width: 768px) and (max-width: 1024px) {
 
