@@ -845,21 +845,40 @@ main {
 					& img {
 						width: 136.25px;
 						height: 125.64px;
+						position: absolute;
 					}
 
-					& h1 {
+					& h1:nth-of-type(1) {
+
 						font-family: "DM Sans", sans-serif;
 						font-size: 7rem;
 						color: var(--green-dark);
 						font-weight: bold;
-
-						top: 10px;
-						left: 70px;
+						position: relative;
+						top: 30px;
+						left: 90px;
 
 						& span {
 							color: white;
 						}
 					}
+
+					& h1:nth-of-type(2) {
+
+						font-family: "DM Sans", sans-serif;
+						font-size: 7rem;
+						color: var(--green-dark);
+						font-weight: bold;
+						position: relative;
+						top: 10px;
+						left: 130px;
+
+						& span {
+							color: white;
+						}
+					}
+
+
 
 					
 				}
@@ -867,7 +886,7 @@ main {
 				& > p {
 					font-family: "poppins";
 					font-size: 2rem;
-					width: 500.36px;
+					width: 800.36px;
 					color: white;
 
 					margin: 30px 0;
